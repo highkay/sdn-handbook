@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,15 +1484,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ebpf&#x6545;&#x969C;&#x6392;&#x67E5;">eBPF&#x6545;&#x969C;&#x6392;&#x67E5;</h1>
-<h2 id="&#x5185;&#x5B58;&#x9650;&#x5236;">&#x5185;&#x5B58;&#x9650;&#x5236;</h2>
+                                <h1 id="ebpf&#x6545;&#x969C;&#x6392;&#x67E5;"><a name="ebpf&#x6545;&#x969C;&#x6392;&#x67E5;" class="plugin-anchor" href="#ebpf&#x6545;&#x969C;&#x6392;&#x67E5;"><i class="fa fa-link" aria-hidden="true"></i></a>eBPF&#x6545;&#x969C;&#x6392;&#x67E5;</h1>
+<h2 id="&#x5185;&#x5B58;&#x9650;&#x5236;"><a name="&#x5185;&#x5B58;&#x9650;&#x5236;" class="plugin-anchor" href="#&#x5185;&#x5B58;&#x9650;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5185;&#x5B58;&#x9650;&#x5236;</h2>
 <p><code>eBPF map</code>&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x7684;&#x5185;&#x5B58;&#xFF08;<code>locked memory</code>&#xFF09;&#xFF0C;&#x4F46;&#x9ED8;&#x8BA4;&#x975E;&#x5E38;&#x5C0F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8C03;&#x7528;<a href="http://man7.org/linux/man-pages/man2/setrlimit.2.html" target="_blank">setrlimit(2)</a>&#x6765;&#x589E;&#x5927;<code>RLIMIT_MEMLOCK</code>&#x3002;&#x5982;&#x679C;&#x5185;&#x5B58;&#x4E0D;&#x8DB3;&#xFF0C;<code>bpf_create_map</code>&#x4F1A;&#x8FD4;&#x56DE;<code>EPERM (Operation not permitted)</code>&#x9519;&#x8BEF;&#x3002;</p>
-<h2 id="&#x5F00;&#x542F;bpf-jit">&#x5F00;&#x542F;BPF JIT</h2>
+<h2 id="&#x5F00;&#x542F;bpf-jit"><a name="&#x5F00;&#x542F;bpf-jit" class="plugin-anchor" href="#&#x5F00;&#x542F;bpf-jit"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F00;&#x542F;BPF JIT</h2>
 <p>&#x5F00;&#x542F;&#x65B9;&#x6CD5;&#x4E3A;</p>
 <pre><code class="lang-sh">$ sysctl net/core/bpf_jit_<span class="hljs-built_in">enable</span>=1
 net.core.bpf_jit_<span class="hljs-built_in">enable</span> = 1
 </code></pre>
-<h2 id="elf&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;">ELF&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</h2>
+<h2 id="elf&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;"><a name="elf&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;" class="plugin-anchor" href="#elf&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>ELF&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</h2>
 <p><code>eBPF</code>&#x901A;&#x8FC7;<code>LLVM</code>&#x7F16;&#x8BD1;&#x5668;&#x751F;&#x6210;&#x7684;&#x7A0B;&#x5E8F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;<code>ELF</code>&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>readelf</code>&#x6216;&#x8005;<code>llvm-objdump</code>&#x5206;&#x6790;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x5982;</p>
 <pre><code class="lang-sh">$ llvm-objdump -h xdp_ddos01_blacklist_kern.o
 
@@ -1505,7 +1509,7 @@ Idx Name          Size      Address          Type
   6 license       00000004 0000000000000000 DATA
   7 .symtab       000000d8 0000000000000000
 </code></pre>
-<h2 id="&#x63D0;&#x53D6;ebpf-jit&#x4EE3;&#x7801;">&#x63D0;&#x53D6;eBPF-JIT&#x4EE3;&#x7801;</h2>
+<h2 id="&#x63D0;&#x53D6;ebpf-jit&#x4EE3;&#x7801;"><a name="&#x63D0;&#x53D6;ebpf-jit&#x4EE3;&#x7801;" class="plugin-anchor" href="#&#x63D0;&#x53D6;ebpf-jit&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63D0;&#x53D6;eBPF-JIT&#x4EE3;&#x7801;</h2>
 <p>&#x5728;&#x8C03;&#x8BD5;<code>eBPF</code>&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x63D0;&#x53D6;<code>eBPF-JIT</code>&#x4EE3;&#x7801;</p>
 <pre><code class="lang-sh">$ sysctl net.core.bpf_jit_<span class="hljs-built_in">enable</span>=2
 </code></pre>
@@ -1576,7 +1580,7 @@ Idx Name          Size      Address          Type
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"故障排查","level":"2.2.7.2","depth":3,"next":{"title":"XDP","level":"2.2.8","depth":2,"path":"linux/XDP/README.md","ref":"linux/XDP/README.md","articles":[{"title":"XDP架构","level":"2.2.8.1","depth":3,"path":"linux/XDP/design.md","ref":"linux/XDP/design.md","articles":[]},{"title":"使用场景","level":"2.2.8.2","depth":3,"path":"linux/XDP/use-cases.md","ref":"linux/XDP/use-cases.md","articles":[]}]},"previous":{"title":"bcc","level":"2.2.7.1","depth":3,"path":"linux/bpf/bcc.md","ref":"linux/bpf/bcc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/bpf/troubleshooting.md","mtime":"2017-11-27T16:48:23.465Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"故障排查","level":"2.2.7.2","depth":3,"next":{"title":"XDP","level":"2.2.8","depth":2,"path":"linux/XDP/README.md","ref":"linux/XDP/README.md","articles":[{"title":"XDP架构","level":"2.2.8.1","depth":3,"path":"linux/XDP/design.md","ref":"linux/XDP/design.md","articles":[]},{"title":"使用场景","level":"2.2.8.2","depth":3,"path":"linux/XDP/use-cases.md","ref":"linux/XDP/use-cases.md","articles":[]}]},"previous":{"title":"bcc","level":"2.2.7.1","depth":3,"path":"linux/bpf/bcc.md","ref":"linux/bpf/bcc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/bpf/troubleshooting.md","mtime":"2017-11-27T16:48:23.465Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1584,6 +1588,10 @@ Idx Name          Size      Address          Type
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

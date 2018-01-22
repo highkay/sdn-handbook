@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,8 +1484,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="dpdk&#x5B89;&#x88C5;">DPDK&#x5B89;&#x88C5;</h1>
-<h2 id="&#x6E90;&#x7801;&#x5B89;&#x88C5;">&#x6E90;&#x7801;&#x5B89;&#x88C5;</h2>
+                                <h1 id="dpdk&#x5B89;&#x88C5;"><a name="dpdk&#x5B89;&#x88C5;" class="plugin-anchor" href="#dpdk&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>DPDK&#x5B89;&#x88C5;</h1>
+<h2 id="&#x6E90;&#x7801;&#x5B89;&#x88C5;"><a name="&#x6E90;&#x7801;&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#x6E90;&#x7801;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6E90;&#x7801;&#x5B89;&#x88C5;</h2>
 <pre><code class="lang-sh"><span class="hljs-built_in">export</span> RTE_SDK=<span class="hljs-string">&quot;/usr/src/dpdk&quot;</span>
 <span class="hljs-built_in">export</span> DPDK_VERSION=<span class="hljs-string">&quot;2.2.0&quot;</span>
 <span class="hljs-built_in">export</span> RTE_TARGET=<span class="hljs-string">&quot;x86_64-native-linuxapp-gcc&quot;</span>
@@ -1520,11 +1524,11 @@ systemctl reboot
 insmod kmod/igb_uio.ko
 ./tools/dpdk-devbind.py --bind=igb_uio &lt;Device BDF&gt;
 </code></pre>
-<h2 id="rehl-72">REHL 7.2</h2>
+<h2 id="rehl-72"><a name="rehl-72" class="plugin-anchor" href="#rehl-72"><i class="fa fa-link" aria-hidden="true"></i></a>REHL 7.2</h2>
 <pre><code class="lang-sh">subscription-manager repos --enable rhel-7-server-extras-rpms
 yum install dpdk dpdk-tools
 </code></pre>
-<h2 id="ubuntu-15">Ubuntu 15+</h2>
+<h2 id="ubuntu-15"><a name="ubuntu-15" class="plugin-anchor" href="#ubuntu-15"><i class="fa fa-link" aria-hidden="true"></i></a>Ubuntu 15+</h2>
 <pre><code class="lang-sh">apt-get install dpdk
 </code></pre>
 
@@ -1570,7 +1574,7 @@ yum install dpdk dpdk-tools
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DPDK安装","level":"2.4.2","depth":2,"next":{"title":"报文转发模型","level":"2.4.3","depth":2,"path":"dpdk/forwarding.md","ref":"dpdk/forwarding.md","articles":[]},"previous":{"title":"DPDK简介","level":"2.4.1","depth":2,"path":"dpdk/introduction.md","ref":"dpdk/introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dpdk/install.md","mtime":"2017-12-07T15:45:42.686Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"DPDK安装","level":"2.4.2","depth":2,"next":{"title":"报文转发模型","level":"2.4.3","depth":2,"path":"dpdk/forwarding.md","ref":"dpdk/forwarding.md","articles":[]},"previous":{"title":"DPDK简介","level":"2.4.1","depth":2,"path":"dpdk/introduction.md","ref":"dpdk/introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dpdk/install.md","mtime":"2017-12-07T15:45:42.686Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1578,6 +1582,10 @@ yum install dpdk dpdk-tools
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,11 +1484,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="bcc-bpf-compiler-collection">BCC (BPF Compiler Collection)</h1>
+                                <h1 id="bcc-bpf-compiler-collection"><a name="bcc-bpf-compiler-collection" class="plugin-anchor" href="#bcc-bpf-compiler-collection"><i class="fa fa-link" aria-hidden="true"></i></a>BCC (BPF Compiler Collection)</h1>
 <p><code>BPF Compiler Collection</code> (<code>BCC</code>)&#x662F;&#x57FA;&#x4E8E;<code>eBPF</code>&#x7684;<code>Linux</code>&#x5185;&#x6838;&#x5206;&#x6790;&#x3001;&#x8DDF;&#x8E2A;&#x3001;&#x7F51;&#x7EDC;&#x76D1;&#x63A7;&#x5DE5;&#x5177;&#x3002;&#x5176;&#x6E90;&#x7801;&#x5B58;&#x653E;&#x4E8E;<a href="https://github.com/iovisor/bcc" target="_blank">iovisor/bcc</a>&#x3002;</p>
-<h2 id="bcc&#x5305;&#x62EC;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;">BCC&#x5305;&#x62EC;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;</h2>
+<h2 id="bcc&#x5305;&#x62EC;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;"><a name="bcc&#x5305;&#x62EC;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;" class="plugin-anchor" href="#bcc&#x5305;&#x62EC;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>BCC&#x5305;&#x62EC;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;</h2>
 <p><img src="https://github.com/iovisor/bcc/raw/master/images/bcc_tracing_tools_2016.png" alt="Linux bcc/BPF Tracing Tools"></p>
-<h2 id="&#x5B89;&#x88C5;bcc">&#x5B89;&#x88C5;BCC</h2>
+<h2 id="&#x5B89;&#x88C5;bcc"><a name="&#x5B89;&#x88C5;bcc" class="plugin-anchor" href="#&#x5B89;&#x88C5;bcc"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;BCC</h2>
 <p><code>Ubuntu</code>&#xFF1A;</p>
 <pre><code class="lang-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;deb [trusted=yes] https://repo.iovisor.org/apt/xenial xenial-nightly main&quot;</span> | sudo tee /etc/apt/sources.list.d/iovisor.list
 sudo apt-get update
@@ -1505,8 +1509,8 @@ bitesize      dcstat     funccount       mountsnoop      profile      statsnoop 
 btrfsdist     doc        funclatency     mysqld_qslower  runqlat      syncsnoop   trace       zfsslower
 btrfsslower   execsnoop  gethostlatency  offcputime      slabratetop  tcpaccept   ttysnoop
 </code></pre>
-<h2 id="&#x5E38;&#x7528;&#x5DE5;&#x5177;&#x793A;&#x4F8B;">&#x5E38;&#x7528;&#x5DE5;&#x5177;&#x793A;&#x4F8B;</h2>
-<h3 id="capable">capable</h3>
+<h2 id="&#x5E38;&#x7528;&#x5DE5;&#x5177;&#x793A;&#x4F8B;"><a name="&#x5E38;&#x7528;&#x5DE5;&#x5177;&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x5E38;&#x7528;&#x5DE5;&#x5177;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x5DE5;&#x5177;&#x793A;&#x4F8B;</h2>
+<h3 id="capable"><a name="capable" class="plugin-anchor" href="#capable"><i class="fa fa-link" aria-hidden="true"></i></a>capable</h3>
 <p><code>capable</code>&#x68C0;&#x67E5;<code>Linux</code>&#x8FDB;&#x7A0B;&#x7684;<code>security capabilities</code>&#xFF1A;</p>
 <pre><code class="lang-sh">$ capable
 TIME      UID    PID    COMM             CAP  NAME                 AUDIT
@@ -1525,13 +1529,13 @@ TIME      UID    PID    COMM             CAP  NAME                 AUDIT
 22:11:24  0      7026   chmod            3    CAP_FOWNER           1
 [...]
 </code></pre>
-<h3 id="tcpconnect">tcpconnect</h3>
+<h3 id="tcpconnect"><a name="tcpconnect" class="plugin-anchor" href="#tcpconnect"><i class="fa fa-link" aria-hidden="true"></i></a>tcpconnect</h3>
 <p><code>tcpconnect</code>&#x68C0;&#x67E5;&#x6D3B;&#x8DC3;&#x7684;<code>TCP</code>&#x8FDE;&#x63A5;&#xFF0C;&#x5E76;&#x8F93;&#x51FA;&#x6E90;&#x548C;&#x76EE;&#x7684;&#x5730;&#x5740;&#xFF1A;</p>
 <pre><code class="lang-sh">$ ./tcpconnect
  PID    COMM         IP SADDR            DADDR            DPORT
  2462   curl         4  192.168.1.99       74.125.23.138    80
 </code></pre>
-<h3 id="tcptop">tcptop</h3>
+<h3 id="tcptop"><a name="tcptop" class="plugin-anchor" href="#tcptop"><i class="fa fa-link" aria-hidden="true"></i></a>tcptop</h3>
 <p><code>tcptop</code>&#x7EDF;&#x8BA1;TCP&#x53D1;&#x9001;&#x548C;&#x63A5;&#x53D7;&#x6D41;&#x91CF;&#xFF1A;</p>
 <pre><code class="lang-sh">$ ./tcptop -C 1 3
 Tracing... Output every 1 secs. Hit Ctrl-C to end
@@ -1551,7 +1555,7 @@ PID    COMM         LADDR                 RADDR                  RX_KB  TX_KB
 PID    COMM         LADDR                 RADDR                  RX_KB  TX_KB
 1740   sshd         192.168.1.99:22         192.168.0.29:60315         0      0
 </code></pre>
-<h2 id="&#x6269;&#x5C55;&#x5DE5;&#x5177;">&#x6269;&#x5C55;&#x5DE5;&#x5177;</h2>
+<h2 id="&#x6269;&#x5C55;&#x5DE5;&#x5177;"><a name="&#x6269;&#x5C55;&#x5DE5;&#x5177;" class="plugin-anchor" href="#&#x6269;&#x5C55;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6269;&#x5C55;&#x5DE5;&#x5177;</h2>
 <p>&#x57FA;&#x4E8E;<code>eBPF</code>&#x548C;<code>bcc</code>&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x6269;&#x5C55;&#x529F;&#x80FD;&#x3002;<code>bcc</code>&#x76EE;&#x524D;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x4E8B;&#x4EF6;</p>
 <ul>
 <li><code>kprobe__kernel_function_name</code> (<code>BPF.attach_kprobe()</code>)</li>
@@ -1560,7 +1564,7 @@ PID    COMM         LADDR                 RADDR                  RX_KB  TX_KB
 <li><code>BPF.attach_uprobe()</code>&#x548C;<code>BPF.attach_uretprobe()</code></li>
 <li>&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x63A2;&#x9488;(USDT) <code>USDT.enable_probe()</code></li>
 </ul>
-<h3 id="&#x7B80;&#x5355;&#x793A;&#x4F8B;">&#x7B80;&#x5355;&#x793A;&#x4F8B;</h3>
+<h3 id="&#x7B80;&#x5355;&#x793A;&#x4F8B;"><a name="&#x7B80;&#x5355;&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x7B80;&#x5355;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x5355;&#x793A;&#x4F8B;</h3>
 <pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
 <span class="hljs-keyword">from</span> __future__ <span class="hljs-keyword">import</span> print_function
 <span class="hljs-keyword">from</span> bcc <span class="hljs-keyword">import</span> BPF
@@ -1584,7 +1588,7 @@ print(<span class="hljs-string">&quot;%-18s %-16s %-6s %s&quot;</span> % (<span 
                 <span class="hljs-keyword">continue</span>
         print(<span class="hljs-string">&quot;%-18.9f %-16s %-6d %s&quot;</span> % (ts, task, pid, msg))
 </code></pre>
-<h3 id="&#x4F7F;&#x7528;bpfperfoutput">&#x4F7F;&#x7528;<code>BPF_PERF_OUTPUT</code></h3>
+<h3 id="&#x4F7F;&#x7528;bpfperfoutput"><a name="&#x4F7F;&#x7528;bpfperfoutput" class="plugin-anchor" href="#&#x4F7F;&#x7528;bpfperfoutput"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;<code>BPF_PERF_OUTPUT</code></h3>
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> __future__ <span class="hljs-keyword">import</span> print_function
 <span class="hljs-keyword">from</span> bcc <span class="hljs-keyword">import</span> BPF
 <span class="hljs-keyword">import</span> ctypes <span class="hljs-keyword">as</span> ct
@@ -1623,7 +1627,7 @@ b[<span class="hljs-string">&quot;events&quot;</span>].open_perf_buffer(print_ev
     b.kprobe_poll()
 </code></pre>
 <p>&#x66F4;&#x591A;&#x7684;&#x793A;&#x4F8B;&#x53C2;&#x8003;<a href="https://github.com/iovisor/bcc/blob/master/docs/tutorial_bcc_python_developer.md" target="_blank">bbc/docs/tutorial_bcc_python_developer.md</a>&#x3002;</p>
-<h3 id="&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x63A2;&#x9488;&#x793A;&#x4F8B;">&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x63A2;&#x9488;&#x793A;&#x4F8B;</h3>
+<h3 id="&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x63A2;&#x9488;&#x793A;&#x4F8B;"><a name="&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x63A2;&#x9488;&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x63A2;&#x9488;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x63A2;&#x9488;&#x793A;&#x4F8B;</h3>
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> __future__ <span class="hljs-keyword">import</span> print_function
 <span class="hljs-keyword">from</span> bcc <span class="hljs-keyword">import</span> BPF
 <span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> strftime
@@ -1685,7 +1689,7 @@ TIME      PID    COMM                  LATms HOST
 08:23:26  3370   ping                   2.00 google.com
 08:23:37  3372   ping                  56.00 baidu.com
 </code></pre>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://www.iovisor.org/" target="_blank">iovisor.org</a></li>
 <li><a href="https://www.iovisor.org/technology/ebpf" target="_blank">iovisor.org - ebpf</a></li>
@@ -1740,7 +1744,7 @@ TIME      PID    COMM                  LATms HOST
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"bcc","level":"2.2.7.1","depth":3,"next":{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]},"previous":{"title":"eBPF","level":"2.2.7","depth":2,"path":"linux/bpf/README.md","ref":"linux/bpf/README.md","articles":[{"title":"bcc","level":"2.2.7.1","depth":3,"path":"linux/bpf/bcc.md","ref":"linux/bpf/bcc.md","articles":[]},{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/bpf/bcc.md","mtime":"2017-11-27T16:48:23.465Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"bcc","level":"2.2.7.1","depth":3,"next":{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]},"previous":{"title":"eBPF","level":"2.2.7","depth":2,"path":"linux/bpf/README.md","ref":"linux/bpf/README.md","articles":[{"title":"bcc","level":"2.2.7.1","depth":3,"path":"linux/bpf/bcc.md","ref":"linux/bpf/bcc.md","articles":[]},{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/bpf/bcc.md","mtime":"2017-11-27T16:48:23.465Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1748,6 +1752,10 @@ TIME      PID    COMM                  LATms HOST
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

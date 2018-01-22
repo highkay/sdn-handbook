@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,12 +1484,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x5E73;&#x53F0;-service-control-platform-scp">&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x5E73;&#x53F0; (Service control Platform, SCP)</h1>
+                                <h1 id="&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x5E73;&#x53F0;-service-control-platform-scp"><a name="&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x5E73;&#x53F0;-service-control-platform-scp" class="plugin-anchor" href="#&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x5E73;&#x53F0;-service-control-platform-scp"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x5E73;&#x53F0; (Service control Platform, SCP)</h1>
 <p>SCP&#x662F;&#x5904;&#x4E8E;&#x7F51;&#x7EDC;&#x8FB9;&#x7F18;&#x4E1A;&#x52A1;&#x6280;&#x672F;&#x65B9;&#x6848;&#x7684;&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x5C42;&#xFF0C;&#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x63A5;&#x5165;&#x7528;&#x6237;&#x7684;&#x4E1A;&#x52A1;&#x5B9A;&#x5236;&#x3001;&#x4E1A;&#x52A1;&#x7B56;&#x7565;&#x3001;&#x57FA;&#x7840;&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x3001;&#x8FD0;&#x8425;&#x652F;&#x6491;&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
-<h2 id="scp&#x53C2;&#x8003;&#x67B6;&#x6784;">SCP&#x53C2;&#x8003;&#x67B6;&#x6784;</h2>
+<h2 id="scp&#x53C2;&#x8003;&#x67B6;&#x6784;"><a name="scp&#x53C2;&#x8003;&#x67B6;&#x6784;" class="plugin-anchor" href="#scp&#x53C2;&#x8003;&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>SCP&#x53C2;&#x8003;&#x67B6;&#x6784;</h2>
 <p>&#x5728;&#x672C;&#x65B9;&#x6848;&#x4E2D;&#xFF0C;SCP&#x63D0;&#x4F9B;&#x4E1A;&#x52A1;&#x5B9A;&#x5236;&#x3001;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x4EE5;&#x53CA;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x7B49;&#x529F;&#x80FD;&#xFF0C;&#x63D0;&#x4F9B;&#x4E0E;OSS&#x3001;AAA&#x7B49;&#x8FD0;&#x8425;&#x652F;&#x6491;&#x7CFB;&#x7EDF;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x63D0;&#x4F9B;ODL&#x63A7;&#x5236;&#x5668;&#x5C42;&#x3001;OpenStack&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x6210;&#x7684;&#x5BF9;&#x63A5;&#x80FD;&#x529B;&#x3002;</p>
 <p><img src="images/scp-arch.svg" alt="scp arch"></p>
-<h2 id="scp&#x6A21;&#x5757;&#x8BF4;&#x660E;">SCP&#x6A21;&#x5757;&#x8BF4;&#x660E;</h2>
+<h2 id="scp&#x6A21;&#x5757;&#x8BF4;&#x660E;"><a name="scp&#x6A21;&#x5757;&#x8BF4;&#x660E;" class="plugin-anchor" href="#scp&#x6A21;&#x5757;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>SCP&#x6A21;&#x5757;&#x8BF4;&#x660E;</h2>
 <ol>
 <li>&#x9879;&#x76EE;&#x7BA1;&#x7406;(Projects) : &#x7BA1;&#x7406;&#x7528;&#x6237;&#x548C;&#x4E1A;&#x52A1;&#x7684;&#x6346;&#x7ED1;&#x5173;&#x7CFB;&#xFF0C;&#x5B9E;&#x73B0;&#x4E1A;&#x52A1;&#x63A7;&#x5236;&#x80FD;&#x529B;&#x548C;&#x4E1A;&#x52A1;&#x7B56;&#x7565;&#x5411;&#x8D44;&#x6E90;&#x9700;&#x6C42;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x63D0;&#x4F9B;&#x9879;&#x76EE;&#x6FC0;&#x6D3B;&#x548C;&#x53BB;&#x6FC0;&#x6D3B;&#x7684;&#x64CD;&#x4F5C;&#x754C;&#x9762;&#x3002;</li>
 <li>&#x7528;&#x6237;&#x7BA1;&#x7406;(Subscriber): &#x7BA1;&#x7406;&#x7528;&#x6237;&#xFF08;&#x8D44;&#x6E90;&#x4F7F;&#x7528;&#x8005;&#xFF09;&#xFF0C;&#x63D0;&#x4F9B;&#x6240;&#x6709;&#x63A5;&#x5165;&#x7528;&#x6237;&#x7684;SLA&#x914D;&#x7F6E;&#x53CA;&#x7528;&#x6237;&#x7EC4;&#x5B9A;&#x4E49;&#x529F;&#x80FD;&#xFF0C;&#x5B9E;&#x73B0;&#x540C;&#x6B65;&#x7528;&#x6237;&#x4E0A;&#x4E0B;&#x7EBF;&#x72B6;&#x6001;&#x3002;</li>
@@ -1496,7 +1500,7 @@
 <li>&#x57FA;&#x7840;&#x914D;&#x7F6E;(System Config) : &#x7BA1;&#x7406;&#x57FA;&#x7840;&#x914D;&#x7F6E;&#xFF0C;&#x63D0;&#x4F9B;&#x8BBE;&#x65BD;&#x914D;&#x7F6E;&#x3001;OSS&#x63A5;&#x53E3;&#x914D;&#x7F6E;&#x3001;&#x7CFB;&#x7EDF;&#x8BED;&#x8A00;&#x914D;&#x7F6E;&#x4EE5;&#x53CA;&#x7CFB;&#x7EDF;&#x7528;&#x6237;&#x6743;&#x9650;&#x7BA1;&#x7406;&#x3002;</li>
 <li>Web&#x4F7F;&#x7528;&#x5E73;&#x53F0;(Web Portal): &#x63D0;&#x4F9B;&#x7528;&#x6237;&#x5728;&#x7EBF;&#x5B9A;&#x5236;&#x5404;&#x79CD;&#x529F;&#x80FD;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4E0E;AAA&#x670D;&#x52A1;&#x5668;&#x4EE5;&#x53CA;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x6A21;&#x5757;&#x5171;&#x540C;&#x5B8C;&#x6210;&#x3002;</li>
 </ol>
-<h2 id="scp&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x7F16;&#x6392;">SCP&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x7F16;&#x6392;</h2>
+<h2 id="scp&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x7F16;&#x6392;"><a name="scp&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x7F16;&#x6392;" class="plugin-anchor" href="#scp&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x7F16;&#x6392;"><i class="fa fa-link" aria-hidden="true"></i></a>SCP&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x7F16;&#x6392;</h2>
 <p><img src="images/scp-business-choreographer-process.jpg" alt="SCP&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x7F16;&#x6392;"></p>
 <p>SCP&#x7684;&#x4E1A;&#x52A1;&#x7F16;&#x6392;&#x6D41;&#x7A0B;&#x6D89;&#x53CA;&#x6574;&#x4E2A;&#x65B9;&#x6848;&#x4E2D;&#x7684;&#x63D2;&#x4EF6;&#x4EA4;&#x4E92;&#x3002;</p>
 <ol>
@@ -1504,9 +1508,9 @@
 <li>&#x5728;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x7ED1;&#x5B9A;&#x7528;&#x6237;&#x7EC4;&#x3001;&#x8D44;&#x6E90;&#x7EC4;&#x4EE5;&#x53CA;&#x4E1A;&#x52A1;&#x5957;&#x9910;&#x3002;&#x5373;&#x8868;&#x793A;&#x7ED1;&#x5B9A;&#x7684;&#x7528;&#x6237;&#x4F1A;&#x6309;&#x7167;&#x8BA2;&#x8D2D;&#x7684;&#x4E1A;&#x52A1;&#x5957;&#x9910;&#xFF0C;&#x5728;&#x8D44;&#x6E90;&#x6C60;&#x4E0A;&#x5206;&#x914D;&#x76F8;&#x5E94;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x4F8B;&#x5982;&#x8BA2;&#x8D2D;&#x5728;&#x7EBF;&#x6740;&#x6BD2;&#x670D;&#x52A1;&#x7684;&#x7528;&#x6237;&#x7EC4;&#x7684;&#x7F51;&#x7EDC;&#x6D41;&#x91CF;&#x4F1A;&#x5F15;&#x5BFC;&#x81F3;&#x63D0;&#x4F9B;&#x6740;&#x6BD2;&#x670D;&#x52A1;&#x7684;VM&#xFF0C;&#x5176;&#x670D;&#x52A1;&#x94FE;&#x8DEF;&#x5F84;&#x7531;&#x4E1A;&#x52A1;&#x5957;&#x9910;&#x51B3;&#x5B9A;&#x3002;</li>
 <li>&#x5728;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x6FC0;&#x6D3B;&#x76F8;&#x5173;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x7B56;&#x7565;&#x624D;&#x80FD;&#x771F;&#x6B63;&#x751F;&#x6548;&#x3002;&#x9879;&#x76EE;&#x6210;&#x529F;&#x6FC0;&#x6D3B;&#x540E;&#xFF0C;SCP&#x5C06;&#x4ECE;BRAS&#x76D1;&#x542C;&#x5230;&#x7528;&#x6237;&#x7EC4;&#x5185;&#x7684;&#x7528;&#x6237;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x76D1;&#x63A7;&#x4F1A;&#x8BDD;&#x7684;&#x53D8;&#x5316;&#xFF1A;&#x7528;&#x6237;&#x4E0A;&#x7EBF;&#x4F1A;&#x4EA7;&#x751F;&#x65B0;&#x7684;&#x4F1A;&#x8BDD;&#xFF0C;&#x7528;&#x6237;&#x4E0B;&#x7EBF;&#x5C06;&#x4F1A;&#x5220;&#x9664;&#x76F8;&#x5E94;&#x7684;&#x4F1A;&#x8BDD;&#x3002;</li>
 </ol>
-<h2 id="&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;">&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;</h2>
+<h2 id="&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;"><a name="&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;" class="plugin-anchor" href="#&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;</h2>
 <p><img src="images/scp-and-odl-interface.svg" alt="SCP&#x4E0E;OpenDaylight&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;"></p>
-<h3 id="&#x6DFB;&#x52A0;&#x7B56;&#x7565;">&#x6DFB;&#x52A0;&#x7B56;&#x7565;</h3>
+<h3 id="&#x6DFB;&#x52A0;&#x7B56;&#x7565;"><a name="&#x6DFB;&#x52A0;&#x7B56;&#x7565;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x7B56;&#x7565;</h3>
 <ul>
 <li>URL</li>
 </ul>
@@ -1531,7 +1535,7 @@
     <span class="hljs-string">&quot;PolicyList&quot;</span>:[]     <span class="hljs-comment">//&#x7B56;&#x7565;&#x6570;&#x636E;</span>
 }
 </code></pre>
-<h3 id="&#x5220;&#x9664;&#x6570;&#x636E;">&#x5220;&#x9664;&#x6570;&#x636E;</h3>
+<h3 id="&#x5220;&#x9664;&#x6570;&#x636E;"><a name="&#x5220;&#x9664;&#x6570;&#x636E;" class="plugin-anchor" href="#&#x5220;&#x9664;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x6570;&#x636E;</h3>
 <ul>
 <li>URL</li>
 </ul>
@@ -1556,7 +1560,7 @@
     }
 }
 </code></pre>
-<h2 id="&#x8D44;&#x6E90;&#x76D1;&#x63A7;">&#x8D44;&#x6E90;&#x76D1;&#x63A7;</h2>
+<h2 id="&#x8D44;&#x6E90;&#x76D1;&#x63A7;"><a name="&#x8D44;&#x6E90;&#x76D1;&#x63A7;" class="plugin-anchor" href="#&#x8D44;&#x6E90;&#x76D1;&#x63A7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D44;&#x6E90;&#x76D1;&#x63A7;</h2>
 <p>&#x5728;SCP&#x4E2D;&#xFF0C;&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x6A21;&#x5757;&#x4E3B;&#x8981;&#x7BA1;&#x7406;&#x7269;&#x7406;&#x3001;&#x865A;&#x62DF;&#x670D;&#x52A1;&#x5668;&#x6216;&#x8BBE;&#x5907;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x4E3A;VNF&#x8D44;&#x6E90;&#x7684;&#x5F39;&#x6027;&#x4F38;&#x7F29;&#x63D0;&#x4F9B;&#x539F;&#x59CB;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x62EC;&#x8D44;&#x6E90;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x548C;&#x8D44;&#x6E90;&#x9884;&#x8B66;&#x8BBE;&#x7F6E;&#x3002;</p>
 <ul>
 <li>&#x63D0;&#x4F9B;7x24h&#x4E0D;&#x95F4;&#x65AD;&#x7684;&#x76D1;&#x63A7;&#xFF0C;&#x76D1;&#x63A7;&#x529B;&#x5EA6;&#x4E3A;1 min</li>
@@ -1565,9 +1569,9 @@
 </ul>
 <p><img src="images/scp-resource-monitor-arch.svg" alt="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x67B6;&#x6784;"></p>
 <p>&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x6A21;&#x5757;&#x91C7;&#x7528;<code>NETCONF</code>&#x534F;&#x8BAE;&#x91C7;&#x96C6;&#x8D44;&#x6E90;&#x72B6;&#x6001;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x6BCF;&#x5929;&#x4E3B;&#x673A;&#x6216;&#x865A;&#x62DF;&#x673A;&#x5B89;&#x88C5;<code>NETCONF</code>&#x4EE3;&#x7406;&#xFF0C;&#x91C7;&#x96C6;&#x5668;&#x5B9A;&#x65F6;&#x8BBF;&#x95EE;&#x4EE3;&#x7406;&#xFF0C;&#x4ECE;&#x4EE3;&#x7406;&#x8BFB;&#x53D6;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF0C;&#x6700;&#x540E;&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x91C7;&#x96C6;&#x8D44;&#x6E90;&#x7684;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x3002;</p>
-<h3 id="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6D41;&#x7A0B;">&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6D41;&#x7A0B;</h3>
+<h3 id="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6D41;&#x7A0B;"><a name="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6D41;&#x7A0B;" class="plugin-anchor" href="#&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6D41;&#x7A0B;</h3>
 <p><img src="images/scp-resource-monitor-process.jpg" alt="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6D41;&#x7A0B;"></p>
-<h3 id="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6A21;&#x5757;">&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6A21;&#x5757;</h3>
+<h3 id="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6A21;&#x5757;"><a name="&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6A21;&#x5757;" class="plugin-anchor" href="#&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6A21;&#x5757;</h3>
 <p><img src="images/scp-resource-monitor-module.svg" alt="&#x76D1;&#x63A7;&#x91C7;&#x96C6;&#x6A21;&#x5757;"></p>
 
                                 
@@ -1612,7 +1616,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"业务控制平台-SCP","level":"5.1.2","depth":2,"next":{"title":"15. FAQ","level":"6.1","depth":1,"path":"FAQ.md","ref":"FAQ.md","articles":[]},"previous":{"title":"SDN控制器应用场景","level":"5.1.1","depth":2,"path":"sample/application-scenarios.md","ref":"sample/application-scenarios.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sample/scp.md","mtime":"2017-11-24T15:00:52.814Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"业务控制平台-SCP","level":"5.1.2","depth":2,"next":{"title":"15. FAQ","level":"6.1","depth":1,"path":"FAQ.md","ref":"FAQ.md","articles":[]},"previous":{"title":"SDN控制器应用场景","level":"5.1.1","depth":2,"path":"sample/application-scenarios.md","ref":"sample/application-scenarios.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sample/scp.md","mtime":"2017-11-24T15:00:52.814Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1620,6 +1624,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

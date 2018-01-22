@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,7 +1484,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ovs-dpdk">OVS DPDK</h1>
+                                <h1 id="ovs-dpdk"><a name="ovs-dpdk" class="plugin-anchor" href="#ovs-dpdk"><i class="fa fa-link" aria-hidden="true"></i></a>OVS DPDK</h1>
 <p><code>OVS</code>&#x5728;&#x5B9E;&#x73B0;&#x4E2D;&#x5206;&#x4E3A;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x548C;&#x5185;&#x6838;&#x7A7A;&#x95F4;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x3002;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x62E5;&#x6709;&#x591A;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x4EEC;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x548C;OpenFlow&#x6D41;&#x8868;&#x529F;&#x80FD;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x7528;&#x4E8E;&#x865A;&#x62DF;&#x4EA4;&#x6362;&#x673A;&#x7BA1;&#x7406;&#x3001;&#x6570;&#x636E;&#x5E93;&#x642D;&#x5EFA;&#x4EE5;&#x53CA;&#x548C;&#x5185;&#x6838;&#x7EC4;&#x4EF6;&#x7684;&#x4EA4;&#x4E92;&#x3002;&#x5185;&#x6838;&#x7EC4;&#x4EF6;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x6D41;&#x8868;&#x67E5;&#x627E;&#x7684;&#x5FEB;&#x901F;&#x901A;&#x9053;&#x3002;<code>OVS</code>&#x7684;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;&#x53CA;&#x5176;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x5982;&#x56FE;</p>
 <p><img src="../ovs/images/ovs-internals.jpg" alt="ovs internal"></p>
 <p>&#x4E0B;&#x56FE;&#x663E;&#x793A;&#x4E86;<code>OVS</code>&#x6570;&#x636E;&#x901A;&#x8DEF;&#x7684;&#x5185;&#x90E8;&#x6A21;&#x5757;&#x56FE;</p>
@@ -1496,7 +1500,7 @@
 </ul>
 <p><code>DPDK</code>&#x52A0;&#x901F;&#x7684;&#x601D;&#x60F3;&#x5C31;&#x662F;&#x4E13;&#x6CE8;&#x5728;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x901A;&#x8DEF;&#x4E0A;</p>
 <p><img src="images/ovs-with-dpdk.jpg" alt="ovs with dpdk"></p>
-<h2 id="ovs-with-dpdk">ovs with dpdk</h2>
+<h2 id="ovs-with-dpdk"><a name="ovs-with-dpdk" class="plugin-anchor" href="#ovs-with-dpdk"><i class="fa fa-link" aria-hidden="true"></i></a>ovs with dpdk</h2>
 <p><img src="images/ovs-with-dpdk-architecture.jpg" alt="ovs with dpdk architecture"></p>
 <p><img src="images/ovs-architecture-process.jpg" alt="ovs architecture process"></p>
 <ul>
@@ -1515,9 +1519,9 @@
 <li>&#x63A7;&#x5236;&#x5668;&#x4E0B;&#x53D1;&#x65B0;&#x7684;&#x6D41;&#x8868;&#xFF0C;&#x8BE5;&#x6570;&#x636E;&#x5305;&#x91CD;&#x65B0;&#x53D1;&#x8D77;&#x9009;&#x8DEF;&#xFF0C;&#x5339;&#x914D;&#xFF1B;&#x62A5;&#x6587;&#x8F6C;&#x53D1;&#xFF0C;&#x7ED3;&#x675F;&#x3002;</li>
 </ol>
 <p><code>DPDK</code>&#x52A0;&#x901F;&#x7684;<code>OVS</code>&#x4E0E;&#x539F;&#x59CB;<code>OVS</code>&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x4ECE;<code>OVS</code>&#x8FDE;&#x63A5;&#x7684;&#x67D0;&#x4E2A;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;&#x63A5;&#x6536;&#x5230;&#x7684;&#x62A5;&#x6587;&#x4E0D;&#x9700;&#x8981;<code>openvswitch.ko</code>&#x5185;&#x6838;&#x6001;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x62A5;&#x6587;&#x901A;&#x8FC7;<code>DPDK PMD</code>&#x9A71;&#x52A8;&#x76F4;&#x63A5;&#x5230;&#x8FBE;&#x7528;&#x6237;&#x6001;<code>ovs-vswitchd</code>&#x91CC;&#x3002;</p>
-<h2 id="packet-flow">Packet Flow</h2>
+<h2 id="packet-flow"><a name="packet-flow" class="plugin-anchor" href="#packet-flow"><i class="fa fa-link" aria-hidden="true"></i></a>Packet Flow</h2>
 <p><img src="images/ovs-packet-flow.jpg" alt="ovs packet flow"></p>
-<h2 id="&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x4F18;&#x5316;">&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x4F18;&#x5316;</h2>
+<h2 id="&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x4F18;&#x5316;"><a name="&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x4F18;&#x5316;" class="plugin-anchor" href="#&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F51;&#x7EDC;&#x5B58;&#x50A8;&#x4F18;&#x5316;</h2>
 <p><img src="images/network-storage-optimization.jpg" alt="network-storage-optimization"></p>
 
                                 
@@ -1562,7 +1566,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVS DPDK","level":"2.4.11","depth":2,"next":{"title":"SPDK","level":"2.4.12","depth":2,"path":"dpdk/spdk.md","ref":"dpdk/spdk.md","articles":[]},"previous":{"title":"虚拟化","level":"2.4.10","depth":2,"path":"dpdk/io-virtualization.md","ref":"dpdk/io-virtualization.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dpdk/ovs-dpdk.md","mtime":"2017-12-07T15:45:42.689Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVS DPDK","level":"2.4.11","depth":2,"next":{"title":"SPDK","level":"2.4.12","depth":2,"path":"dpdk/spdk.md","ref":"dpdk/spdk.md","articles":[]},"previous":{"title":"虚拟化","level":"2.4.10","depth":2,"path":"dpdk/io-virtualization.md","ref":"dpdk/io-virtualization.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dpdk/ovs-dpdk.md","mtime":"2017-12-07T15:45:42.689Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1570,6 +1574,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

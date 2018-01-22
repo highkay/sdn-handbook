@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,13 +1484,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="arp">ARP</h1>
+                                <h1 id="arp"><a name="arp" class="plugin-anchor" href="#arp"><i class="fa fa-link" aria-hidden="true"></i></a>ARP</h1>
 <p>&#x94FE;&#x8DEF;&#x5C42;&#x901A;&#x4FE1;&#x6839;&#x636E;<code>48bit</code>&#x4EE5;&#x592A;&#x7F51;&#x5730;&#x5740;&#xFF08;&#x786C;&#x4EF6;&#x5730;&#x5740;&#xFF09;&#x6765;&#x786E;&#x5B9A;&#x76EE;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x800C;&#x5730;&#x5740;&#x89E3;&#x6790;&#x534F;&#x8BAE;&#x8D1F;&#x8D23;<code>32bit</code> <code>IP</code>&#x5730;&#x5740;&#x4E0E;<code>48bit</code>&#x4EE5;&#x592A;&#x7F51;&#x5730;&#x5740;&#x4E4B;&#x95F4;&#x7684;&#x6620;&#x5C04;&#xFF1A;</p>
 <ul>
 <li>&#xFF08;1&#xFF09;<code>ARP</code>&#x8D1F;&#x8D23;&#x5C06;<code>IP</code>&#x5730;&#x5740;&#x6620;&#x5C04;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x786C;&#x4EF6;&#x5730;&#x5740;</li>
 <li>&#xFF08;2&#xFF09;<code>RARP</code>&#x8D1F;&#x8D23;&#x76F8;&#x53CD;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x65E0;&#x76D8;&#x7CFB;&#x7EDF;&#x3002;</li>
 </ul>
-<h2 id="arp&#x9AD8;&#x901F;&#x7F13;&#x5B58;">ARP&#x9AD8;&#x901F;&#x7F13;&#x5B58;</h2>
+<h2 id="arp&#x9AD8;&#x901F;&#x7F13;&#x5B58;"><a name="arp&#x9AD8;&#x901F;&#x7F13;&#x5B58;" class="plugin-anchor" href="#arp&#x9AD8;&#x901F;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>ARP&#x9AD8;&#x901F;&#x7F13;&#x5B58;</h2>
 <p><code>ARP</code>&#x9AD8;&#x6548;&#x8FD0;&#x884C;&#x7684;&#x5173;&#x952E;&#x662F;&#x6BCF;&#x53F0;&#x4E3B;&#x673A;&#x4E0A;&#x90FD;&#x6709;&#x4E00;&#x4E2A;<code>ARP</code>&#x9AD8;&#x901F;&#x7F13;&#x5B58;&#xFF0C;&#x7F13;&#x5B58;&#x4E2D;&#x6BCF;&#x4E00;&#x9879;&#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x4E00;&#x822C;&#x4E3A;20&#x5206;&#x949F;&#xFF0C;&#x4F46;&#x4E0D;&#x5B8C;&#x6574;&#x8868;&#x9879;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x4E00;&#x822C;&#x4E3A;3&#x5206;&#x949F;&#xFF08;&#x5982;192.168.13.254&#xFF09;&#x3002;</p>
 <pre><code class="lang-sh"><span class="hljs-comment"># arp -a</span>
 
@@ -1501,7 +1505,7 @@
 <li><code>arp -s ip mac</code> &#x6DFB;&#x52A0;&#x9759;&#x6001;ARP&#x8BB0;&#x5F55;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x6C38;&#x4E45;&#x4FDD;&#x5B58;&#xFF0C;&#x5E94;&#x8BE5;&#x7F16;&#x8F91;<code>/etc/ethers</code>&#x6587;&#x4EF6;&#x3002;</li>
 <li><code>arp -f</code> &#x4F7F;<code>/etc/ethers</code>&#x4E2D;&#x7684;&#x9759;&#x6001;ARP&#x8BB0;&#x5F55;&#x751F;&#x6548;&#x3002;</li>
 </ul>
-<h2 id="arp&#x5206;&#x7EC4;&#x683C;&#x5F0F;">ARP&#x5206;&#x7EC4;&#x683C;&#x5F0F;</h2>
+<h2 id="arp&#x5206;&#x7EC4;&#x683C;&#x5F0F;"><a name="arp&#x5206;&#x7EC4;&#x683C;&#x5F0F;" class="plugin-anchor" href="#arp&#x5206;&#x7EC4;&#x683C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>ARP&#x5206;&#x7EC4;&#x683C;&#x5F0F;</h2>
 <p><img src="images/arp-frame.png" alt="ARP&#x5E27;&#x5206;&#x7EC4;&#x683C;&#x5F0F;"></p>
 <p>&#x5176;&#x4E2D;&#xFF1A;</p>
 <ul>
@@ -1518,22 +1522,22 @@
 21:08:10.329163 00:16:3e:01:79:43 &gt; ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.14.23 tell 192.168.13.43, length 28
 21:08:10.329626 00:16:3e:01:7b:17 &gt; 00:16:3e:01:79:43, ethertype ARP (0x0806), length 60: Ethernet (len 6), IPv4 (len 4), Reply 192.168.14.23 is-at 00:16:3e:01:7b:17, length 46
 </code></pre>
-<h2 id="arp&#x4EE3;&#x7406;">ARP&#x4EE3;&#x7406;</h2>
+<h2 id="arp&#x4EE3;&#x7406;"><a name="arp&#x4EE3;&#x7406;" class="plugin-anchor" href="#arp&#x4EE3;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>ARP&#x4EE3;&#x7406;</h2>
 <p>&#x5F53;&#x5411;&#x4F4D;&#x4E8E;&#x4E0D;&#x540C;&#x7F51;&#x7EDC;&#x7684;&#x4E3B;&#x673A;&#x53D1;&#x9001;<code>ARP</code>&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x7531;&#x4E24;&#x4E2A;&#x7F51;&#x7EDC;&#x4E4B;&#x95F4;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x54CD;&#x5E94;&#x8BE5;<code>ARP</code>&#x8BF7;&#x6C42;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;<code>ARP</code>&#x4EE3;&#x7406;&#x3002;</p>
 <p><code>ARP</code>&#x4EE3;&#x7406;&#x4E5F;&#x79F0;&#x4E3A;&#x6DF7;&#x5408;<code>ARP</code>&#xFF1A;&#x901A;&#x8FC7;&#x4E24;&#x4E2A;&#x7F51;&#x7EDC;&#x4E4B;&#x95F4;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x9690;&#x85CF;&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x3002;</p>
-<h2 id="&#x514D;&#x8D39;arp">&#x514D;&#x8D39;ARP</h2>
+<h2 id="&#x514D;&#x8D39;arp"><a name="&#x514D;&#x8D39;arp" class="plugin-anchor" href="#&#x514D;&#x8D39;arp"><i class="fa fa-link" aria-hidden="true"></i></a>&#x514D;&#x8D39;ARP</h2>
 <p>&#x4E3B;&#x673A;&#x53D1;&#x9001;<code>ARP</code>&#x8BF7;&#x6C42;&#x67E5;&#x627E;&#x81EA;&#x5DF1;&#x7684;IP&#x5730;&#x5740;&#x3002;&#x901A;&#x5E38;&#x6709;&#x4E24;&#x4E2A;&#x7528;&#x9014;&#xFF1A;</p>
 <ul>
 <li>&#xFF08;1&#xFF09;&#x786E;&#x8BA4;&#x7F51;&#x7EDC;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x5176;&#x4ED6;&#x4E3B;&#x673A;&#x8BBE;&#x7F6E;&#x4E86;&#x76F8;&#x540C;&#x7684;<code>IP</code>&#x5730;&#x5740;&#xFF1B;</li>
 <li>&#xFF08;2&#xFF09;&#x5F53;&#x4E3B;&#x673A;&#x7684;&#x7269;&#x7406;&#x5730;&#x5740;&#x6539;&#x53D8;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x514D;&#x8D39;<code>ARP</code>&#x66F4;&#x65B0;&#x66F4;&#x65B0;&#x8DEF;&#x7531;&#x5668;&#x548C;&#x5176;&#x4ED6;&#x4E3B;&#x673A;&#x4E2D;&#x7684;&#x9AD8;&#x901F;&#x7F13;&#x5B58;&#x3002;</li>
 </ul>
-<h2 id="rarp">RARP</h2>
+<h2 id="rarp"><a name="rarp" class="plugin-anchor" href="#rarp"><i class="fa fa-link" aria-hidden="true"></i></a>RARP</h2>
 <ol>
 <li><code>RARP</code>&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x65E0;&#x76D8;&#x7CFB;&#x7EDF;&#xFF0C;&#x65E0;&#x76D8;&#x7CFB;&#x7EDF;&#x4ECE;&#x7269;&#x7406;&#x7F51;&#x5361;&#x4E0A;&#x8BFB;&#x5230;&#x786C;&#x4EF6;&#x5730;&#x5740;&#x540E;&#xFF0C;&#x53D1;&#x9001;&#x4E00;&#x4E2A;<code>RARP</code>&#x8BF7;&#x6C42;&#x67E5;&#x8BE2;&#x81EA;&#x5DF1;&#x7684;<code>IP</code>&#x5730;&#x5740;&#x3002;</li>
 <li><code>RARP</code>&#x7684;&#x534F;&#x8BAE;&#x683C;&#x5F0F;&#xFF1A;&#x4E0E;<code>ARP</code>&#x534F;&#x8BAE;&#x4E00;&#x81F4;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5E27;&#x7C7B;&#x578B;&#x4EE3;&#x7801;&#x4E3A;<code>0x8035</code></li>
 <li><code>RARP</code>&#x4F7F;&#x7528;&#x94FE;&#x8DEF;&#x5C42;&#x5E7F;&#x64AD;&#xFF0C;&#x8FD9;&#x6837;&#x963B;&#x6B62;&#x4E86;&#x5927;&#x591A;&#x6570;&#x8DEF;&#x7531;&#x5668;&#x8F6C;&#x53D1;<code>ARAP</code>&#x8BF7;&#x6C42;&#xFF0C;&#x53EA;&#x8FD4;&#x56DE;&#x5F88;&#x5C0F;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5373;<code>IP</code>&#x5730;&#x5740;&#x3002;</li>
 </ol>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE" target="_blank">&#x5730;&#x5740;&#x89E3;&#x6790;&#x534F;&#x8BAE; (ARP)</a></li>
 <li><a href="https://www.ibm.com/developerworks/cn/linux/l-arp/index.html" target="_blank">ARP&#x534F;&#x8BAE;&#x63ED;&#x5BC6;</a></li>
@@ -1582,7 +1586,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ARP","level":"2.1.2","depth":2,"next":{"title":"ICMP","level":"2.1.3","depth":2,"path":"basic/icmp.md","ref":"basic/icmp.md","articles":[]},"previous":{"title":"TCP/IP网络模型","level":"2.1.1","depth":2,"path":"basic/tcpip.md","ref":"basic/tcpip.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"basic/arp.md","mtime":"2017-11-24T12:56:28.519Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ARP","level":"2.1.2","depth":2,"next":{"title":"ICMP","level":"2.1.3","depth":2,"path":"basic/icmp.md","ref":"basic/icmp.md","articles":[]},"previous":{"title":"TCP/IP网络模型","level":"2.1.1","depth":2,"path":"basic/tcpip.md","ref":"basic/tcpip.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"basic/arp.md","mtime":"2017-11-24T12:56:28.519Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1590,6 +1594,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,15 +1484,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ovn&#x5B9E;&#x8DF5;">OVN&#x5B9E;&#x8DF5;</h1>
-<h2 id="ovn-logical-flow">OVN Logical Flow</h2>
+                                <h1 id="ovn&#x5B9E;&#x8DF5;"><a name="ovn&#x5B9E;&#x8DF5;" class="plugin-anchor" href="#ovn&#x5B9E;&#x8DF5;"><i class="fa fa-link" aria-hidden="true"></i></a>OVN&#x5B9E;&#x8DF5;</h1>
+<h2 id="ovn-logical-flow"><a name="ovn-logical-flow" class="plugin-anchor" href="#ovn-logical-flow"><i class="fa fa-link" aria-hidden="true"></i></a>OVN Logical Flow</h2>
 <p><code>OVN</code>&#x903B;&#x8F91;&#x6D41;&#x8868;&#x4F1A;&#x7531;<code>ovn-northd</code>&#x5206;&#x53D1;&#x7ED9;&#x6BCF;&#x53F0;&#x673A;&#x5668;&#x7684;<code>ovn-controller</code>&#xFF0C;&#x7136;&#x540E;<code>ovn-controller</code>&#x518D;&#x628A;&#x5B83;&#x4EEC;&#x8F6C;&#x6362;&#x4E3A;&#x7269;&#x7406;&#x6D41;&#x8868;&#x3002;</p>
 <p>&#x66F4;&#x591A;&#x53C2;&#x8003;</p>
 <ul>
 <li><a href="https://blog.russellbryant.net/2016/11/11/ovn-logical-flows-and-ovn-trace/" target="_blank">OVN Logical Flows and ovn-trace</a></li>
 <li><a href="https://blog.russellbryant.net/2015/10/22/openstack-security-groups-using-ovn-acls/" target="_blank">OpenStack Security Groups using OVN ACLs</a></li>
 </ul>
-<h2 id="ovn&#x5B89;&#x5168;&#x7EC4;">OVN&#x5B89;&#x5168;&#x7EC4;</h2>
+<h2 id="ovn&#x5B89;&#x5168;&#x7EC4;"><a name="ovn&#x5B89;&#x5168;&#x7EC4;" class="plugin-anchor" href="#ovn&#x5B89;&#x5168;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>OVN&#x5B89;&#x5168;&#x7EC4;</h2>
 <p>&#x4F7F;&#x7528;<code>OVN</code>&#x53EA;&#x9700;&#x8981;&#x628A;<code>VM</code>&#x7684;<code>tap</code>&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x5230;<code>br-int</code>&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x73B0;&#x5728;&#x9700;&#x8981;&#x591A;&#x52A0;&#x4E00;&#x5C42;<code>Linux Bridge</code>&#xFF09;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;<code>OVS conntrack</code>&#x6839;&#x636E;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF0C;&#x63D0;&#x9AD8;&#x4E86;&#x6D41;&#x8868;&#x7684;&#x67E5;&#x627E;&#x901F;&#x5EA6;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x652F;&#x6301;&#x6709;&#x72B6;&#x6001;&#x9632;&#x706B;&#x5899;&#x548C;<code>NAT</code>&#x3002;</p>
 <pre><code class="lang-sh"><span class="hljs-comment"># allow all ip traffic from port &quot;ls1-vm1&quot; on switch &quot;ls1&quot; and allowing related connections back in</span>
 ovn-nbctl acl-add ls1 from-lport 1000 <span class="hljs-string">&quot;inport == \&quot;ls1-vm1\&quot; &amp;&amp; ip&quot;</span> allow-related
@@ -1516,7 +1520,7 @@ ovn-nbctl destroy Address_Set dmz
 <ul>
 <li><a href="https://blog.russellbryant.net/2015/10/22/openstack-security-groups-using-ovn-acls/" target="_blank">OpenStack Security Groups using OVN ACLs</a></li>
 </ul>
-<h2 id="ovn-l2">OVN L2</h2>
+<h2 id="ovn-l2"><a name="ovn-l2" class="plugin-anchor" href="#ovn-l2"><i class="fa fa-link" aria-hidden="true"></i></a>OVN L2</h2>
 <p><code>OVN L2</code>&#x529F;&#x80FD;&#x5305;&#x62EC;</p>
 <ul>
 <li>L2 switch</li>
@@ -1576,7 +1580,7 @@ ovs-vsctl add-port br-int lport2 -- <span class="hljs-built_in">set</span> inter
 <ul>
 <li><a href="http://galsagie.github.io/2015/05/30/ovn-deep-dive/" target="_blank">OVN L2 Deep Dive</a></li>
 </ul>
-<h2 id="ovn-l3">OVN L3</h2>
+<h2 id="ovn-l3"><a name="ovn-l3" class="plugin-anchor" href="#ovn-l3"><i class="fa fa-link" aria-hidden="true"></i></a>OVN L3</h2>
 <p><code>OVN L3</code>&#x7684;&#x529F;&#x80FD;&#x5305;&#x62EC;</p>
 <ul>
 <li>IPv4/IPv6&#x5206;&#x5E03;&#x5F0F;L3&#x8DEF;&#x7531;</li>
@@ -1597,7 +1601,7 @@ external_ip=10.127.0.129 -- add logical_router edge1 nat @nat
 <li><p><a href="http://networkop.co.uk/blog/2016/12/10/ovn-part2/" target="_blank">OpenStack SDN With OVN (Part 2) - Network Engineering Analysis</a></p>
 </li>
 </ul>
-<h2 id="ovn-vtep">OVN VTEP</h2>
+<h2 id="ovn-vtep"><a name="ovn-vtep" class="plugin-anchor" href="#ovn-vtep"><i class="fa fa-link" aria-hidden="true"></i></a>OVN VTEP</h2>
 <p><img src="images/ovn-vtep.png" alt="ovn vtep"></p>
 <blockquote>
 <p>&#x56FE;&#x7247;&#x6765;&#x6E90;<a href="https://www.ibm.com/developerworks/cn/cloud/library/1603-ovn-ovs-openvswitch/index.html" target="_blank">&#x5982;&#x4F55;&#x501F;&#x52A9; OVN &#x6765;&#x63D0;&#x9AD8; OVS &#x5728;&#x4E91;&#x8BA1;&#x7B97;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x6027;&#x80FD;</a></p>
@@ -1605,7 +1609,7 @@ external_ip=10.127.0.129 -- add logical_router edge1 nat @nat
 <p><code>OVN</code> &#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>VTEP</code> &#x7F51;&#x5173;&#x628A;&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x548C;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#x3002;<code>VTEP</code> &#x7F51;&#x5173;&#x53EF;&#x4EE5;&#x662F; <code>TOR&#xFF08;Top of Rack&#xFF09;switch</code>&#xFF0C;&#x76EE;&#x524D;&#x5F88;&#x591A;&#x786C;&#x4EF6;&#x5382;&#x5546;&#x90FD;&#x652F;&#x6301;&#xFF0C;&#x6BD4;&#x5982; <code>Arista</code>&#xFF0C;<code>Juniper</code>&#xFF0C;<code>HP</code> &#x7B49;&#x7B49;&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x8F6F;&#x4EF6;&#x505A;&#x7684;&#x903B;&#x8F91; <code>switch</code>&#xFF0C;<code>OVS</code> &#x793E;&#x533A;&#x5C31;&#x505A;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>VTEP</code> &#x6A21;&#x62DF;&#x5668;&#x3002;</p>
 <p><code>VTEP</code>&#x7F51;&#x5173;&#x9700;&#x8981;&#x9075;&#x5B88; <code>VTEP OVSDB schema</code>&#xFF0C;&#x5B83;&#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E86; <code>VTEP</code> &#x7F51;&#x5173;&#x9700;&#x8981;&#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x8868;&#x9879;&#x548C;&#x5185;&#x5BB9;&#xFF0C;<code>VTEP</code> &#x901A;&#x8FC7; <code>OVSDB</code> &#x534F;&#x8BAE;&#x4E0E; <code>OVN</code> &#x901A;&#x4FE1;&#xFF0C;&#x901A;&#x4FE1;&#x7684;&#x6D41;&#x7A0B; <code>OVN</code> &#x4E5F;&#x6709;&#x76F8;&#x5173;&#x6807;&#x51C6;&#xFF0C;<code>VTEP</code> &#x4E0A;&#x9700;&#x8981;&#x4E00;&#x4E2A; <code>ovn-controller-vtep</code> &#x6765;&#x505A; <code>ovn-controller</code> &#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x3002;<code>VTEP</code> &#x7F51;&#x5173;&#x548C; <code>HV</code> &#x4E4B;&#x95F4;&#x5E38;&#x7528; VXLAN &#x5C01;&#x88C5;&#x6280;&#x672F;&#x3002;</p>
 <p>&#x867D;&#x7136; <code>VTEP OVSDB schema</code> &#x91CC;&#x9762;&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x5C42;&#x7684;&#x8868;&#x9879;&#xFF0C;&#x4F46;&#x662F;&#x76EE;&#x524D;&#x6CA1;&#x6709;&#x786C;&#x4EF6;&#x5382;&#x5546;&#x652F;&#x6301;&#xFF0C;<code>VTEP</code> &#x6A21;&#x62DF;&#x5668;&#x4E5F;&#x4E0D;&#x652F;&#x6301;&#xFF0C;&#x6240;&#x4EE5; <code>VTEP</code> &#x7F51;&#x7EDC;&#x53EA;&#x652F;&#x6301;&#x4E8C;&#x5C42;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53EA;&#x80FD;&#x8FDE;&#x63A5;&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x7684; <code>VLAN</code> &#x5230;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x7684; <code>VXLAN</code>&#xFF0C;&#x5982;&#x679C; <code>VTEP</code> &#x4E0A;&#x4E0D;&#x540C; <code>VLAN</code> &#x4E4B;&#x95F4;&#x8981;&#x505A;&#x8DEF;&#x7531;&#xFF0C;&#x9700;&#x8981; <code>OVN</code> &#x91CC;&#x9762;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x6765;&#x505A;&#x3002;</p>
-<h2 id="ovn-chassis">OVN Chassis</h2>
+<h2 id="ovn-chassis"><a name="ovn-chassis" class="plugin-anchor" href="#ovn-chassis"><i class="fa fa-link" aria-hidden="true"></i></a>OVN Chassis</h2>
 <p><code>Chassis</code> &#x662F; <code>OVN</code> &#x65B0;&#x589E;&#x7684;&#x6982;&#x5FF5;&#xFF0C;<code>OVS</code> &#x91CC;&#x9762;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;<code>Chassis</code> &#x53EF;&#x4EE5;&#x662F; <code>HV</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F; <code>VTEP</code> &#x7F51;&#x5173;&#x3002;
 <code>Chassis</code> &#x7684;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x5728; <code>Southbound DB</code> &#x91CC;&#x9762;&#xFF0C;&#x7531; <code>ovn-controller/ovn-controller-vtep</code> &#x6765;&#x7EF4;&#x62A4;&#x3002;</p>
 <p>&#x4EE5; <code>ovn-controller</code> &#x4E3A;&#x4F8B;&#xFF0C;&#x5F53; <code>ovn-controller</code> &#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B83;&#x53BB;&#x672C;&#x5730;&#x7684;&#x6570;&#x636E;&#x5E93; <code>Open_vSwitch</code> &#x8868;&#x91CC;&#x9762;&#x8BFB;&#x53D6;<code>external_ids:system_id</code>&#xFF0C;<code>external_ids:ovn-remote</code>&#xFF0C;<code>external_ids:ovn-encap-ip</code> &#x548C;<code>external_ids:ovn-encap-type</code>&#x7684;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x5B83;&#x628A;&#x8FD9;&#x4E9B;&#x503C;&#x5199;&#x5230; <code>Southbound DB</code> &#x91CC;&#x9762;&#x7684;&#x8868; <code>Chassis</code> &#x548C;&#x8868; <code>Encap</code> &#x91CC;&#x9762;&#xFF1A;</p>
@@ -1616,7 +1620,7 @@ external_ip=10.127.0.129 -- add logical_router edge1 nat @nat
 <li><code>external_ids:ovn-encap-type</code>&#x8868;&#x793A; <code>tunnel</code> &#x5C01;&#x88C5;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x662F; <code>VXLAN/Geneve/STT</code></li>
 </ul>
 <p><code>external_ids:ovn-encap-ip</code>&#x548C;<code>external_ids:ovn-encap-type</code>&#x662F;&#x4E00;&#x5BF9;&#xFF0C;&#x6BCF;&#x4E2A; <code>tunnel IP</code> &#x5730;&#x5740;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A; <code>tunnel</code> &#x5C01;&#x88C5;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C; <code>HV</code> &#x6709;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#x53EF;&#x4EE5;&#x5EFA;&#x7ACB; <code>tunnel</code>&#xFF0C;&#x53EF;&#x4EE5;&#x5728; <code>ovn-controller</code> &#x542F;&#x52A8;&#x4E4B;&#x524D;&#xFF0C;&#x628A;&#x6BCF;&#x5BF9;&#x503C;&#x586B;&#x5728; <code>table Open_vSwitch</code> &#x91CC;&#x9762;&#x3002;</p>
-<h2 id="ovn-tunnel">OVN tunnel</h2>
+<h2 id="ovn-tunnel"><a name="ovn-tunnel" class="plugin-anchor" href="#ovn-tunnel"><i class="fa fa-link" aria-hidden="true"></i></a>OVN tunnel</h2>
 <p><code>OVN</code> &#x652F;&#x6301;&#x7684; <code>tunnel</code> &#x7C7B;&#x578B;&#x6709;&#x4E09;&#x79CD;&#xFF0C;&#x5206;&#x522B;&#x662F; <code>Geneve</code>&#xFF0C;<code>STT</code> &#x548C; <code>VXLAN</code>&#x3002;<code>HV</code> &#x4E0E; <code>HV</code> &#x4E4B;&#x95F4;&#x7684;&#x6D41;&#x91CF;&#xFF0C;&#x53EA;&#x80FD;&#x7528; <code>Geneve</code> &#x548C; <code>STT</code> &#x4E24;&#x79CD;&#xFF0C;<code>HV</code> &#x548C; <code>VTEP</code> &#x7F51;&#x5173;&#x4E4B;&#x95F4;&#x7684;&#x6D41;&#x91CF;&#x9664;&#x4E86;&#x7528; <code>Geneve</code> &#x548C; <code>STT</code> &#x5916;&#xFF0C;&#x8FD8;&#x80FD;&#x7528; <code>VXLAN</code>&#xFF0C;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x517C;&#x5BB9;&#x786C;&#x4EF6; <code>VTEP</code>&#x7F51;&#x5173;&#xFF0C;&#x56E0;&#x4E3A;&#x5927;&#x90E8;&#x5206;&#x786C;&#x4EF6; <code>VTEP</code> &#x7F51;&#x5173;&#x53EA;&#x652F;&#x6301; <code>VXLAN</code>&#x3002;</p>
 <p>&#x867D;&#x7136; <code>VXLAN</code> &#x662F;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x5E38;&#x7528;&#x7684; <code>tunnel</code> &#x6280;&#x672F;&#xFF0C;&#x4F46;&#x662F; <code>VXLAN header</code> &#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x53EA;&#x80FD;&#x4F20;&#x9012;&#x4E00;&#x4E2A; <code>VNID&#xFF08;VXLAN network identifier&#xFF09;</code>&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x5728; <code>tunnel</code> &#x91CC;&#x9762;&#x4F20;&#x9012;&#x66F4;&#x591A;&#x7684;&#x4FE1;&#x606F;&#xFF0C;<code>VXLAN</code>&#x5B9E;&#x73B0;&#x4E0D;&#x4E86;&#x3002;&#x6240;&#x4EE5; <code>OVN</code> &#x9009;&#x62E9;&#x4E86;<code>Geneve</code> &#x548C; <code>STT</code>&#xFF0C;<code>Geneve</code> &#x7684;&#x5934;&#x90E8;&#x6709;&#x4E2A; <code>option</code> &#x5B57;&#x6BB5;&#xFF0C;&#x652F;&#x6301; <code>TLV</code> &#x683C;&#x5F0F;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#xFF0C;&#x800C; <code>STT</code>&#x7684;&#x5934;&#x90E8;&#x53EF;&#x4EE5;&#x4F20;&#x9012; <code>64-bit</code> &#x7684;&#x6570;&#x636E;&#xFF0C;&#x6BD4; <code>VXLAN</code> &#x7684; <code>24-bit</code> &#x5927;&#x5F88;&#x591A;&#x3002;</p>
 <p><code>OVN tunnel</code> &#x5C01;&#x88C5;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x4E09;&#x79CD;&#x6570;&#x636E;&#xFF0C;</p>
@@ -1630,7 +1634,7 @@ external_ip=10.127.0.129 -- add logical_router edge1 nat @nat
 <p><code>OVS</code> &#x7684; <code>tunnel</code> &#x5C01;&#x88C5;&#x662F;&#x7531; <code>Openflow</code> &#x6D41;&#x8868;&#x6765;&#x505A;&#x7684;&#xFF0C;&#x6240;&#x4EE5; <code>ovn-controller</code> &#x9700;&#x8981;&#x628A;&#x8FD9;&#x4E09;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#x5199;&#x5230;&#x672C;&#x5730; <code>HV</code> &#x7684;<code>Openflow flow table</code> &#x91CC;&#x9762;&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x8FDB;&#x5165; <code>br-int</code> &#x7684;&#x62A5;&#x6587;&#xFF0C;&#x90FD;&#x4F1A;&#x6709;&#x8FD9;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;<code>logical datapathidentifier</code> &#x548C; <code>logical input port identifier</code> &#x5728;&#x5165;&#x53E3;&#x65B9;&#x5411;&#x88AB;&#x8D4B;&#x503C;&#xFF0C;&#x5206;&#x522B;&#x5B58;&#x5728; <code>openflow metadata</code> &#x5B57;&#x6BB5;&#x548C; <code>Nicira</code> &#x6269;&#x5C55;&#x5BC4;&#x5B58;&#x5668; <code>reg6</code> &#x91CC;&#x9762;&#x3002;&#x62A5;&#x6587;&#x7ECF;&#x8FC7; <code>OVS</code> &#x7684; <code>pipeline</code>&#x5904;&#x7406;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x4ECE;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53D1;&#x51FA;&#x53BB;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x628A; <code>Logical output port identifier</code> &#x5199;&#x5728; <code>Nicira</code> &#x6269;&#x5C55;&#x5BC4;&#x5B58;&#x5668;<code>reg7</code> &#x91CC;&#x9762;&#x3002;</p>
 <p><code>OVN tunnel</code> &#x91CC;&#x9762;&#x6240;&#x643A;&#x5E26;&#x7684; l<code>ogical input port identifier</code> &#x548C; <code>logical output port identifier</code> &#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x6D41;&#x8868;&#x7684;&#x67E5;&#x627E;&#x6548;&#x7387;&#xFF0C;<code>OVS</code> &#x6D41;&#x8868;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x6765;&#x5904;&#x7406;&#x62A5;&#x6587;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x89E3;&#x6790;&#x62A5;&#x6587;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
 <p><code>OVN</code> &#x91CC;&#x9762;&#x7684; <code>tunnel</code> &#x7C7B;&#x578B;&#x662F;&#x7531; <code>HV</code> &#x4E0A;&#x9762;&#x7684; <code>ovn-controller</code> &#x6765;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x7531; <code>CMS</code> &#x6307;&#x5B9A;&#x7684;&#xFF0C;&#x5E76;&#x4E14; <code>OVN</code> &#x91CC;&#x9762;&#x7684; <code>tunnel ID</code>&#x53C8;&#x7531; <code>OVN</code> &#x81EA;&#x5DF1;&#x5206;&#x914D;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x7528; <code>neutron</code> &#x521B;&#x5EFA; <code>network</code> &#x65F6;&#x6307;&#x5B9A; <code>tunnel</code> &#x7C7B;&#x578B;&#x548C; <code>tunnel ID</code>&#xFF08;&#x6BD4;&#x5982; <code>vnid</code>&#xFF09;&#x662F;&#x65E0;&#x7528;&#x7684;&#xFF0C;<code>OVN</code> &#x4E0D;&#x505A;&#x5904;&#x7406;&#x3002;</p>
-<h2 id="ovn-northbound-db">OVN Northbound DB</h2>
+<h2 id="ovn-northbound-db"><a name="ovn-northbound-db" class="plugin-anchor" href="#ovn-northbound-db"><i class="fa fa-link" aria-hidden="true"></i></a>OVN Northbound DB</h2>
 <p><code>Northbound DB</code> &#x662F; <code>OVN</code> &#x548C; <code>CMS</code> &#x4E4B;&#x95F4;&#x7684;&#x63A5;&#x53E3;&#xFF0C;<code>Northbound DB</code> &#x91CC;&#x9762;&#x7684;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x662F;&#x7531; <code>CMS</code>&#x4EA7;&#x751F;&#x7684;&#xFF0C;<code>ovn-northd</code> &#x76D1;&#x542C;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5185;&#x5BB9;&#x53D8;&#x5316;&#xFF0C;&#x7136;&#x540E;&#x7FFB;&#x8BD1;&#xFF0C;&#x4FDD;&#x5B58;&#x5230; <code>Southbound DB</code> &#x91CC;&#x9762;&#x3002;</p>
 <p><code>Northbound DB</code> &#x91CC;&#x9762;&#x4E3B;&#x8981;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x5F20;&#x8868;&#xFF1A;</p>
 <ul>
@@ -1640,7 +1644,7 @@ external_ip=10.127.0.129 -- add logical_router edge1 nat @nat
 <li><code>Logical_Router</code>&#xFF1A;&#x6BCF;&#x4E00;&#x884C;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x8DEF;&#x7531;&#x5668;&#xFF0C;&#x6BCF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>neutron router</code>&#xFF0C;<code>networking-ovn</code> &#x4F1A;&#x5728;&#x8FD9;&#x5F20;&#x8868;&#x91CC;&#x589E;&#x52A0;&#x4E00;&#x884C;&#xFF0C;&#x6BCF;&#x884C;&#x4FDD;&#x5B58;&#x4E86;&#x5B83;&#x5305;&#x542B;&#x7684;&#x903B;&#x8F91;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x7AEF;&#x53E3;&#x3002;</li>
 <li><code>Logical_Router_Port</code>&#xFF1A;&#x6BCF;&#x4E00;&#x884C;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x8DEF;&#x7531;&#x5668;&#x7AEF;&#x53E3;&#xFF0C;&#x6BCF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>router interface</code>&#xFF0C;<code>networking-ovn</code> &#x4F1A;&#x5728;&#x8FD9;&#x5F20;&#x8868;&#x91CC;&#x52A0;&#x4E00;&#x884C;&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x4FDD;&#x5B58;&#x4E86;&#x8DEF;&#x7531;&#x5668;&#x7AEF;&#x53E3;&#x7684; <code>IP</code> &#x548C; <code>MAC</code>&#x3002;</li>
 </ul>
-<h2 id="ovn-southbound-db">OVN Southbound DB</h2>
+<h2 id="ovn-southbound-db"><a name="ovn-southbound-db" class="plugin-anchor" href="#ovn-southbound-db"><i class="fa fa-link" aria-hidden="true"></i></a>OVN Southbound DB</h2>
 <p><code>Southbound DB</code> &#x91CC;&#x9762;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x5F20;&#x8868;&#xFF1A;</p>
 <ul>
 <li><code>Chassis</code>&#xFF1A;&#x6BCF;&#x4E00;&#x884C;&#x8868;&#x793A;&#x4E00;&#x4E2A; <code>HV</code> &#x6216;&#x8005; <code>VTEP</code> &#x7F51;&#x5173;&#xFF0C;&#x7531; <code>ovn-controller/ovn-controller-vtep</code> &#x586B;&#x5199;&#xFF0C;&#x5305;&#x542B; <code>chassis</code> &#x7684;&#x540D;&#x5B57;&#x548C; <code>chassis</code> &#x652F;&#x6301;&#x7684;&#x5C01;&#x88C5;&#x7684;&#x914D;&#x7F6E;&#xFF08;&#x6307;&#x5411;&#x8868; <code>Encap</code>&#xFF09;&#xFF0C;&#x5982;&#x679C; <code>chassis</code> &#x662F; <code>VTEP</code> &#x7F51;&#x5173;&#xFF0C;<code>VTEP</code> &#x7F51;&#x5173;&#x4E0A;&#x548C; <code>OVN</code> &#x5173;&#x8054;&#x7684;&#x903B;&#x8F91;&#x4EA4;&#x6362;&#x673A;&#x4E5F;&#x4FDD;&#x5B58;&#x5728;&#x8FD9;&#x5F20;&#x8868;&#x91CC;&#x3002;</li>
@@ -1651,7 +1655,7 @@ external_ip=10.127.0.129 -- add logical_router edge1 nat @nat
 <li><code>Port_Binding</code>&#xFF1A;&#x8FD9;&#x5F20;&#x8868;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x786E;&#x5B9A; <code>logical port</code> &#x5904;&#x5728;&#x54EA;&#x4E2A; <code>chassis</code> &#x4E0A;&#x9762;&#x3002;&#x6BCF;&#x4E00;&#x884C;&#x5305;&#x542B;&#x7684;&#x5185;&#x5BB9;&#x4E3B;&#x8981;&#x6709; <code>logical port</code> &#x7684; <code>MAC</code> &#x548C; <code>IP</code> &#x5730;&#x5740;&#xFF0C;&#x7AEF;&#x53E3;&#x7C7B;&#x578B;&#xFF0C;&#x7AEF;&#x53E3;&#x5C5E;&#x4E8E;&#x54EA;&#x4E2A; <code>datapath binding</code>&#xFF0C;&#x4EE3;&#x8868; <code>logical input/output port identifier</code> &#x7684; <code>tunnel_key</code>, &#x4EE5;&#x53CA;&#x7AEF;&#x53E3;&#x5904;&#x5728;&#x54EA;&#x4E2A; <code>chassis</code>&#x3002;&#x7AEF;&#x53E3;&#x6240;&#x5904;&#x7684; <code>chassis</code> &#x7531; <code>ovn-controller/ovn-controller</code> &#x8BBE;&#x7F6E;&#xFF0C;&#x5176;&#x4F59;&#x7684;&#x503C;&#x7531; <code>ovn-northd</code> &#x8BBE;&#x7F6E;&#x3002;</li>
 </ul>
 <p>&#x8868; <code>Chassis</code> &#x548C;&#x8868; <code>Encap</code> &#x5305;&#x542B;&#x7684;&#x662F;&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8868; <code>Logical_Flow</code> &#x548C;&#x8868;<code>Multicast_Group</code>&#x5305;&#x542B;&#x7684;&#x662F;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8868; <code>Datapath_Binding</code> &#x548C;&#x8868; <code>Port_Binding</code> &#x5305;&#x542B;&#x7684;&#x662F;&#x903B;&#x8F91;&#x7F51;&#x7EDC;&#x548C;&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x7ED1;&#x5B9A;&#x5173;&#x7CFB;&#x7684;&#x6570;&#x636E;&#x3002;</p>
-<h2 id="ovn-db&#x6C47;&#x603B;">OVN DB&#x6C47;&#x603B;</h2>
+<h2 id="ovn-db&#x6C47;&#x603B;"><a name="ovn-db&#x6C47;&#x603B;" class="plugin-anchor" href="#ovn-db&#x6C47;&#x603B;"><i class="fa fa-link" aria-hidden="true"></i></a>OVN DB&#x6C47;&#x603B;</h2>
 <pre><code>ovn-nbctl list Logical_Switch
 ovn-nbctl list Logical_Switch_Port
 ovn-nbctl list ACL
@@ -1667,7 +1671,7 @@ ovn-sbctl list Multicast_Group
 ovn-sbctl list Datapath_Binding
 ovn-sbctl list Port_Binding
 ovn-sbctl list MAC_Binding
-</code></pre><h2 id="ovn-load-balancer">OVN Load Balancer</h2>
+</code></pre><h2 id="ovn-load-balancer"><a name="ovn-load-balancer" class="plugin-anchor" href="#ovn-load-balancer"><i class="fa fa-link" aria-hidden="true"></i></a>OVN Load Balancer</h2>
 <p><code>OVN Load Balancer</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;<code>hash</code>&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5728;&#x903B;&#x8F91;<code>switch</code>&#x6216;&#x8005;&#x903B;&#x8F91;<code>router</code>&#x4E0A;:</p>
 <ul>
 <li>&#x7528;&#x5728;<code>logical router</code>&#x4E0A;<ul>
@@ -1699,7 +1703,7 @@ ovn-nbctl <span class="hljs-built_in">set</span> logical_switch inside load_bala
 ovn-nbctl clear logical_switch inside load_balancer
 ovn-nbctl destroy load_balancer <span class="hljs-variable">$uuid</span>
 </code></pre>
-<h2 id="dhcp">DHCP</h2>
+<h2 id="dhcp"><a name="dhcp" class="plugin-anchor" href="#dhcp"><i class="fa fa-link" aria-hidden="true"></i></a>DHCP</h2>
 <pre><code class="lang-sh">ovn-nbctl ls-add dmz
 
 <span class="hljs-comment"># add the router</span>
@@ -1729,7 +1733,7 @@ ip netns <span class="hljs-built_in">exec</span> vm1 dhclient vm1
 ip netns <span class="hljs-built_in">exec</span> vm1 ip addr show vm1
 ip netns <span class="hljs-built_in">exec</span> vm1 ip route show
 </code></pre>
-<h2 id="ovn-trace">OVN Trace</h2>
+<h2 id="ovn-trace"><a name="ovn-trace" class="plugin-anchor" href="#ovn-trace"><i class="fa fa-link" aria-hidden="true"></i></a>OVN Trace</h2>
 <p><code>ovn-trace</code>&#x662F;&#x5F88;&#x597D;&#x7684;&#x8F85;&#x52A9;&#x5DE5;&#x5177;.</p>
 <pre><code>$ sudo ovn-trace --minimal sw0 &apos;inport == &quot;sw0-port1&quot; &amp;&amp; eth.src == 00:00:00:00:00:01 &amp;&amp; eth.dst == 00:00:00:00:00:02&apos;
 # reg14=0x1,vlan_tci=0x0000,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:02,dl_type=0x0000
@@ -1771,7 +1775,7 @@ ingress(dp=&quot;sw0&quot;, inport=&quot;sw0-port1&quot;)
 -------------------------------------
  0. ls_in_port_sec_l2: no match (implicit drop)
 </code></pre><p>&#x66F4;&#x591A;OVN&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="https://github.com/feiskyer/ops/tree/master/ovs/ovn" target="_blank">&#x8FD9;&#x91CC;</a>&#x3002;</p>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://blog.russellbryant.net/2016/11/11/ovn-logical-flows-and-ovn-trace/" target="_blank">OVN Logical Flows and ovn-trace</a></li>
 <li><a href="https://blog.russellbryant.net/2015/10/22/openstack-security-groups-using-ovn-acls/" target="_blank">OpenStack Security Groups using OVN ACLs</a></li>
@@ -1822,7 +1826,7 @@ ingress(dp=&quot;sw0&quot;, inport=&quot;sw0-port1&quot;)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVN实践","level":"2.3.4.2","depth":3,"next":{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},"previous":{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"path":"ovs/ovn-ubuntu.md","ref":"ovs/ovn-ubuntu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-internal.md","mtime":"2017-12-02T04:14:12.338Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVN实践","level":"2.3.4.2","depth":3,"next":{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},"previous":{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"path":"ovs/ovn-ubuntu.md","ref":"ovs/ovn-ubuntu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-internal.md","mtime":"2017-12-02T04:14:12.338Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1830,6 +1834,10 @@ ingress(dp=&quot;sw0&quot;, inport=&quot;sw0-port1&quot;)
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

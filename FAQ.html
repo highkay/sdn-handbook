@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,14 +1484,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="faq">FAQ</h1>
-<h2 id="&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x4E22;&#x5305;&#x95EE;&#x9898;">&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x4E22;&#x5305;&#x95EE;&#x9898;</h2>
+                                <h1 id="faq"><a name="faq" class="plugin-anchor" href="#faq"><i class="fa fa-link" aria-hidden="true"></i></a>FAQ</h1>
+<h2 id="&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x4E22;&#x5305;&#x95EE;&#x9898;"><a name="&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x4E22;&#x5305;&#x95EE;&#x9898;" class="plugin-anchor" href="#&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x4E22;&#x5305;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x4E22;&#x5305;&#x95EE;&#x9898;</h2>
 <ul>
 <li>&#x5982;&#x4F55;&#x77E5;&#x9053;&#x54EA;&#x4E2A;&#x7F51;&#x5361;&#x5728;&#x4E22;&#x5305;&#xFF1A;<code>netstat -i</code></li>
 <li>&#x5982;&#x4F55;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4E22;&#x5305;&#xFF1A;<code>perf record -g -a -e skb:kfree_skb</code></li>
 <li>&#x5982;&#x4F55;&#x77E5;&#x9053;&#x54EA;&#x91CC;&#x4E22;&#x5305;&#x4E86;&#xFF1A;<a href="https://github.com/pavel-odintsov/drop_watch" target="_blank">https://github.com/pavel-odintsov/drop_watch</a></li>
 </ul>
-<h2 id="&#x5982;&#x4F55;&#x67E5;&#x770B;linux&#x7CFB;&#x7EDF;&#x7684;&#x5E26;&#x5BBD;&#x6D41;&#x91CF;">&#x5982;&#x4F55;&#x67E5;&#x770B;Linux&#x7CFB;&#x7EDF;&#x7684;&#x5E26;&#x5BBD;&#x6D41;&#x91CF;</h2>
+<h2 id="&#x5982;&#x4F55;&#x67E5;&#x770B;linux&#x7CFB;&#x7EDF;&#x7684;&#x5E26;&#x5BBD;&#x6D41;&#x91CF;"><a name="&#x5982;&#x4F55;&#x67E5;&#x770B;linux&#x7CFB;&#x7EDF;&#x7684;&#x5E26;&#x5BBD;&#x6D41;&#x91CF;" class="plugin-anchor" href="#&#x5982;&#x4F55;&#x67E5;&#x770B;linux&#x7CFB;&#x7EDF;&#x7684;&#x5E26;&#x5BBD;&#x6D41;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x67E5;&#x770B;Linux&#x7CFB;&#x7EDF;&#x7684;&#x5E26;&#x5BBD;&#x6D41;&#x91CF;</h2>
 <ul>
 <li>&#x6309;&#x7F51;&#x5361;&#x67E5;&#x770B;&#x6D41;&#x91CF;&#xFF1A;<code>ifstat</code>&#x3001;<code>dstat -nf</code>&#x6216;<code>sar -n DEV 1 2</code></li>
 <li>&#x6309;&#x8FDB;&#x7A0B;&#x67E5;&#x770B;&#x6D41;&#x91CF;&#xFF1A;<code>nethogs</code></li>
@@ -1496,7 +1500,7 @@
 <li>&#x67E5;&#x770B;&#x6D41;&#x91CF;&#x6700;&#x5927;&#x7684;&#x7AEF;&#x53E3;&#xFF1A;<code>sysdig -c topports_server</code></li>
 <li>&#x67E5;&#x770B;&#x8FDE;&#x63A5;&#x6700;&#x591A;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53E3;&#xFF1A;<code>sysdig -c fdbytes_by fd.sport</code></li>
 </ul>
-<h2 id="&#x53C2;&#x8003;&#x6587;&#x6863;">&#x53C2;&#x8003;&#x6587;&#x6863;</h2>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x6863;"><a name="&#x53C2;&#x8003;&#x6587;&#x6863;" class="plugin-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x6587;&#x6863;</h2>
 <ul>
 <li><a href="https://blog.packagecloud.io/eng/2016/06/22/monitoring-tuning-linux-networking-stack-receiving-data/" target="_blank">Monitoring and Tuning the Linux Networking Stack: Receiving Data</a></li>
 <li><a href="https://blog.packagecloud.io/eng/2017/02/06/monitoring-tuning-linux-networking-stack-sending-data/" target="_blank">Monitoring and Tuning the Linux Networking Stack: Sending Data</a></li>
@@ -1544,7 +1548,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"15. FAQ","level":"6.1","depth":1,"next":{"title":"16. 参考文档","level":"6.2","depth":1,"path":"reference.md","ref":"reference.md","articles":[]},"previous":{"title":"业务控制平台-SCP","level":"5.1.2","depth":2,"path":"sample/scp.md","ref":"sample/scp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FAQ.md","mtime":"2017-11-15T14:17:37.719Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"15. FAQ","level":"6.1","depth":1,"next":{"title":"16. 参考文档","level":"6.2","depth":1,"path":"reference.md","ref":"reference.md","articles":[]},"previous":{"title":"业务控制平台-SCP","level":"5.1.2","depth":2,"path":"sample/scp.md","ref":"sample/scp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FAQ.md","mtime":"2017-11-15T14:17:37.719Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1552,6 +1556,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>

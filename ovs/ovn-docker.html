@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,7 +1484,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ovn-docker&#x63D2;&#x4EF6;">OVN docker&#x63D2;&#x4EF6;</h1>
+                                <h1 id="ovn-docker&#x63D2;&#x4EF6;"><a name="ovn-docker&#x63D2;&#x4EF6;" class="plugin-anchor" href="#ovn-docker&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>OVN docker&#x63D2;&#x4EF6;</h1>
 <pre><code class="lang-sh"><span class="hljs-comment"># start docker</span>
 docker daemon --cluster-store=consul://127.0.0.1:8500 \
     --cluster-advertise=<span class="hljs-variable">$HOST_IP</span>:0
@@ -1505,8 +1509,8 @@ PYTHONPATH=<span class="hljs-variable">$OVS_PYTHON_LIBS_PATH</span> ovn-docker-o
 <span class="hljs-comment"># create docker network</span>
 docker network create <span class="hljs-_">-d</span> openvswitch --subnet=192.168.1.0/24 foo
 </code></pre>
-<h2 id="workflow">Workflow</h2>
-<h3 id="initialize-ovn-bridge">Initialize ovn bridge</h3>
+<h2 id="workflow"><a name="workflow" class="plugin-anchor" href="#workflow"><i class="fa fa-link" aria-hidden="true"></i></a>Workflow</h2>
+<h3 id="initialize-ovn-bridge"><a name="initialize-ovn-bridge" class="plugin-anchor" href="#initialize-ovn-bridge"><i class="fa fa-link" aria-hidden="true"></i></a>Initialize ovn bridge</h3>
 <pre><code class="lang-sh">ovs-vsctl --timeout=5 -vconsole:off -- --may-exist add-br br-int \
           -- <span class="hljs-built_in">set</span> bridge br-int external_ids:bridge-id=br-int \
              other-config:<span class="hljs-built_in">disable</span>-in-band=<span class="hljs-literal">true</span> fail-mode=secure
@@ -1514,12 +1518,12 @@ docker network create <span class="hljs-_">-d</span> openvswitch --subnet=192.16
 ovs-vsctl --timeout=5 -vconsole:off -- get Open_vSwitch . external_ids:ovn-nb
 ovs-vsctl --timeout=5 -vconsole:off -- <span class="hljs-built_in">set</span> open_vswitch . external_ids:ovn-bridge=br-int
 </code></pre>
-<h3 id="create-network">Create network</h3>
+<h3 id="create-network"><a name="create-network" class="plugin-anchor" href="#create-network"><i class="fa fa-link" aria-hidden="true"></i></a>Create network</h3>
 <pre><code class="lang-sh">nid=<span class="hljs-string">&quot;red-net&quot;</span>
 ovn-nbctl ls-add <span class="hljs-variable">$nid</span> -- <span class="hljs-built_in">set</span> Logical_Switch <span class="hljs-variable">$nid</span> external_ids:subnet=10.160.0.0/24 external_ids:gateway_ip=10.160.0.1
 ovn-nbctl show
 </code></pre>
-<h3 id="create-container">Create container</h3>
+<h3 id="create-container"><a name="create-container" class="plugin-anchor" href="#create-container"><i class="fa fa-link" aria-hidden="true"></i></a>Create container</h3>
 <pre><code class="lang-sh">nid=<span class="hljs-string">&quot;red-net&quot;</span>
 eid=<span class="hljs-string">&quot;blue-container&quot;</span>
 ip=<span class="hljs-string">&quot;10.160.0.2&quot;</span>
@@ -1546,16 +1550,16 @@ ovs-vsctl --timeout=5 -vconsole:off \
 <p>Get endpoint status</p>
 <pre><code class="lang-sh">ovn-nbctl --if-exists get Logical_Switch_Port <span class="hljs-variable">$eid</span> addresses
 </code></pre>
-<h3 id="delete-container">Delete container</h3>
+<h3 id="delete-container"><a name="delete-container" class="plugin-anchor" href="#delete-container"><i class="fa fa-link" aria-hidden="true"></i></a>Delete container</h3>
 <pre><code class="lang-sh">ip netns del <span class="hljs-variable">$eid</span>
 ip link delete veth_outside
 ovs-vsctl --if-exists del-port veth_outside
 ovn-nbctl lsp-del <span class="hljs-variable">$eid</span>
 </code></pre>
-<h3 id="delete-network">Delete network</h3>
+<h3 id="delete-network"><a name="delete-network" class="plugin-anchor" href="#delete-network"><i class="fa fa-link" aria-hidden="true"></i></a>Delete network</h3>
 <pre><code class="lang-sh">ovn-nbctl ls-del red-net
 </code></pre>
-<h2 id="&#x53C2;&#x8003;&#x6587;&#x6863;">&#x53C2;&#x8003;&#x6587;&#x6863;</h2>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x6863;"><a name="&#x53C2;&#x8003;&#x6587;&#x6863;" class="plugin-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x6587;&#x6863;</h2>
 <ul>
 <li><a href="http://docs.openvswitch.org/en/latest/howto/docker/" target="_blank">Open Virtual Networking With Docker</a></li>
 <li><a href="http://dockone.io/article/1200" target="_blank">&#x5728;Docker&#x4E2D;&#x4F7F;&#x7528;Open vSwitch&#x521B;&#x5EFA;&#x8DE8;&#x4E3B;&#x673A;&#x7684;&#x5BB9;&#x5668;&#x7F51;&#x7EDC;</a></li>
@@ -1603,7 +1607,7 @@ ovn-nbctl lsp-del <span class="hljs-variable">$eid</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"next":{"title":"OVN OpenStack","level":"2.3.4.6","depth":3,"path":"ovs/ovn-openstack.md","ref":"ovs/ovn-openstack.md","articles":[]},"previous":{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-docker.md","mtime":"2017-12-02T04:14:12.338Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"next":{"title":"OVN OpenStack","level":"2.3.4.6","depth":3,"path":"ovs/ovn-openstack.md","ref":"ovs/ovn-openstack.md","articles":[]},"previous":{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-docker.md","mtime":"2017-12-02T04:14:12.338Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1611,6 +1615,10 @@ ovn-nbctl lsp-del <span class="hljs-variable">$eid</span>
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

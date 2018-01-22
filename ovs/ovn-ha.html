@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,9 +1484,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ovn-ha">OVN HA</h1>
+                                <h1 id="ovn-ha"><a name="ovn-ha" class="plugin-anchor" href="#ovn-ha"><i class="fa fa-link" aria-hidden="true"></i></a>OVN HA</h1>
 <p>&#x76EE;&#x524D;&#xFF0C;OVS&#x652F;&#x6301;&#x4E3B;&#x4ECE;&#x6A21;&#x5F0F;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x3002;</p>
-<h2 id="active-backup">Active-Backup</h2>
+<h2 id="active-backup"><a name="active-backup" class="plugin-anchor" href="#active-backup"><i class="fa fa-link" aria-hidden="true"></i></a>Active-Backup</h2>
 <p>&#x5728;&#x542F;&#x52A8;<code>ovsdb-server</code>&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;<a href="http://openvswitch.org/support/dist-docs/ovsdb-server.1.html" target="_blank">&#x4E3B;&#x4ECE;&#x540C;&#x6B65;&#x9009;&#x9879;</a>&#xFF1A;</p>
 <pre><code>    Syncing Options
 
@@ -1531,7 +1535,7 @@ $ pcs constraint order promote ovndb_servers-master then VirtualIP
 $ pcs constraint colocation add VirtualIP with master ovndb_servers-master \
     score=INFINITY
 </code></pre><p>&#x4E3B;&#x4ECE;&#x540C;&#x6B65;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#x53EF;&#x89C1;<a href="http://docs.openvswitch.org/en/latest/topics/ovsdb-replication/" target="_blank">OVSDB Replication Implementation</a>&#x3002;</p>
-<h2 id="active-active">Active-Active</h2>
+<h2 id="active-active"><a name="active-active" class="plugin-anchor" href="#active-active"><i class="fa fa-link" aria-hidden="true"></i></a>Active-Active</h2>
 <p>OVN&#x63A7;&#x5236;&#x5E73;&#x9762;&#x7684;Active-Active&#x9AD8;&#x53EF;&#x7528;&#x8FD8;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x9884;&#x8BA1;&#x4F1A;&#x501F;&#x9274;etcd&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x57FA;&#x4E8E;Raft&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x3002;</p>
 <ul>
 <li><a href="https://github.com/blp/ovs-reviews/tree/raft3" target="_blank">https://github.com/blp/ovs-reviews/tree/raft3</a></li>
@@ -1581,7 +1585,7 @@ $ pcs constraint colocation add VirtualIP with master ovndb_servers-master \
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVN高可用","level":"2.3.4.3","depth":3,"next":{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},"previous":{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-ha.md","mtime":"2017-12-02T04:14:12.338Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVN高可用","level":"2.3.4.3","depth":3,"next":{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},"previous":{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-ha.md","mtime":"2017-12-02T04:14:12.338Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1589,6 +1593,10 @@ $ pcs constraint colocation add VirtualIP with master ovndb_servers-master \
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

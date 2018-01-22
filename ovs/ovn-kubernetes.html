@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,25 +1484,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ovn-kubernetes&#x63D2;&#x4EF6;">OVN Kubernetes&#x63D2;&#x4EF6;</h1>
+                                <h1 id="ovn-kubernetes&#x63D2;&#x4EF6;"><a name="ovn-kubernetes&#x63D2;&#x4EF6;" class="plugin-anchor" href="#ovn-kubernetes&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>OVN Kubernetes&#x63D2;&#x4EF6;</h1>
 <p><a href="https://github.com/openvswitch/ovn-kubernetes" target="_blank">ovn-kubernetes</a>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;<code>ovs OVN</code>&#x7F51;&#x7EDC;&#x63D2;&#x4EF6;&#xFF0C;&#x652F;&#x6301;<code>underlay</code>&#x548C;<code>overlay</code>&#x4E24;&#x79CD;&#x6A21;&#x5F0F;&#x3002;</p>
 <ul>
 <li><code>underlay</code>&#xFF1A;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#xFF0C;&#x800C;<code>ovs</code>&#x5219;&#x8FD0;&#x884C;&#x5728;&#x865A;&#x62DF;&#x673A;&#x6240;&#x5728;&#x7684;&#x7269;&#x7406;&#x673A;&#x4E0A;&#xFF0C;<code>OVN</code>&#x5C06;&#x5BB9;&#x5668;&#x7F51;&#x7EDC;&#x548C;&#x865A;&#x62DF;&#x673A;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;</li>
 <li><code>overlay</code>&#xFF1A;<code>OVN</code>&#x901A;&#x8FC7;<code>logical overlay network</code>&#x8FDE;&#x63A5;&#x6240;&#x6709;&#x8282;&#x70B9;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x6B64;&#x65F6;<code>ovs</code>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x7269;&#x7406;&#x673A;&#x6216;&#x865A;&#x62DF;&#x673A;&#x4E0A;</li>
 </ul>
-<h2 id="overlay&#x6A21;&#x5F0F;">Overlay&#x6A21;&#x5F0F;</h2>
+<h2 id="overlay&#x6A21;&#x5F0F;"><a name="overlay&#x6A21;&#x5F0F;" class="plugin-anchor" href="#overlay&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>Overlay&#x6A21;&#x5F0F;</h2>
 <p><img src="images/ovn-kubernetes.png" alt=""></p>
 <blockquote>
 <p>&#x56FE;&#x7247;&#x6765;&#x81EA;<a href="https://github.com/openvswitch/ovn-kubernetes" target="_blank">How to Use Open Virtual Networking With Kubernetes</a></p>
 </blockquote>
-<h3 id="&#x914D;&#x7F6E;master">&#x914D;&#x7F6E;master</h3>
+<h3 id="&#x914D;&#x7F6E;master"><a name="&#x914D;&#x7F6E;master" class="plugin-anchor" href="#&#x914D;&#x7F6E;master"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;master</h3>
 <pre><code class="lang-sh">ovs-vsctl <span class="hljs-built_in">set</span> Open_vSwitch . external_ids:k8s-api-server=<span class="hljs-string">&quot;127.0.0.1:8080&quot;</span>
 ovn-k8s-overlay master-init \
   --cluster-ip-subnet=<span class="hljs-string">&quot;192.168.0.0/16&quot;</span> \
   --master-switch-subnet=<span class="hljs-string">&quot;192.168.1.0/24&quot;</span> \
   --node-name=<span class="hljs-string">&quot;kube-master&quot;</span>
 </code></pre>
-<h3 id="&#x914D;&#x7F6E;node">&#x914D;&#x7F6E;Node</h3>
+<h3 id="&#x914D;&#x7F6E;node"><a name="&#x914D;&#x7F6E;node" class="plugin-anchor" href="#&#x914D;&#x7F6E;node"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;Node</h3>
 <pre><code class="lang-sh">ovs-vsctl <span class="hljs-built_in">set</span> Open_vSwitch . \
   external_ids:k8s-api-server=<span class="hljs-string">&quot;<span class="hljs-variable">$K8S_API_SERVER_IP</span>:8080&quot;</span>
 
@@ -1512,7 +1516,7 @@ ovn-k8s-overlay minion-init \
   --minion-switch-subnet=<span class="hljs-string">&quot;192.168.2.0/24&quot;</span> \
   --node-name=<span class="hljs-string">&quot;kube-minion1&quot;</span>
 </code></pre>
-<h3 id="&#x914D;&#x7F6E;&#x7F51;&#x5173;node-&#x53EF;&#x4EE5;&#x7528;&#x5DF2;&#x6709;&#x7684;node&#x6216;&#x8005;&#x5355;&#x72EC;&#x7684;&#x8282;&#x70B9;">&#x914D;&#x7F6E;&#x7F51;&#x5173;Node (&#x53EF;&#x4EE5;&#x7528;&#x5DF2;&#x6709;&#x7684;Node&#x6216;&#x8005;&#x5355;&#x72EC;&#x7684;&#x8282;&#x70B9;)</h3>
+<h3 id="&#x914D;&#x7F6E;&#x7F51;&#x5173;node-&#x53EF;&#x4EE5;&#x7528;&#x5DF2;&#x6709;&#x7684;node&#x6216;&#x8005;&#x5355;&#x72EC;&#x7684;&#x8282;&#x70B9;"><a name="&#x914D;&#x7F6E;&#x7F51;&#x5173;node-&#x53EF;&#x4EE5;&#x7528;&#x5DF2;&#x6709;&#x7684;node&#x6216;&#x8005;&#x5355;&#x72EC;&#x7684;&#x8282;&#x70B9;" class="plugin-anchor" href="#&#x914D;&#x7F6E;&#x7F51;&#x5173;node-&#x53EF;&#x4EE5;&#x7528;&#x5DF2;&#x6709;&#x7684;node&#x6216;&#x8005;&#x5355;&#x72EC;&#x7684;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x7F51;&#x5173;Node (&#x53EF;&#x4EE5;&#x7528;&#x5DF2;&#x6709;&#x7684;Node&#x6216;&#x8005;&#x5355;&#x72EC;&#x7684;&#x8282;&#x70B9;)</h3>
 <p>&#x9009;&#x9879;&#x4E00;&#xFF1A;&#x5916;&#x7F51;&#x4F7F;&#x7528;&#x5355;&#x72EC;&#x7684;&#x7F51;&#x5361;<code>eth1</code></p>
 <pre><code class="lang-sh">ovs-vsctl <span class="hljs-built_in">set</span> Open_vSwitch . \
   external_ids:k8s-api-server=<span class="hljs-string">&quot;<span class="hljs-variable">$K8S_API_SERVER_IP</span>:8080&quot;</span>
@@ -1542,7 +1546,7 @@ ovn-k8s-overlay gateway-init \
 ovn-k8s-gateway-helper --physical-bridge=breth0 --physical-interface=eth0 \
     --pidfile --detach
 </code></pre>
-<h3 id="&#x542F;&#x52A8;ovn-k8s-watcher">&#x542F;&#x52A8;ovn-k8s-watcher</h3>
+<h3 id="&#x542F;&#x52A8;ovn-k8s-watcher"><a name="&#x542F;&#x52A8;ovn-k8s-watcher" class="plugin-anchor" href="#&#x542F;&#x52A8;ovn-k8s-watcher"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;ovn-k8s-watcher</h3>
 <p>ovn-k8s-watcher&#x76D1;&#x542C;Kubernetes&#x4E8B;&#x4EF6;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x903B;&#x8F91;&#x7AEF;&#x53E3;&#x548C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x3002;</p>
 <pre><code>ovn-k8s-watcher \
   --overlay \
@@ -1551,8 +1555,8 @@ ovn-k8s-gateway-helper --physical-bridge=breth0 --physical-interface=eth0 \
   -vfile:info \
   -vconsole:emer \
   --detach
-</code></pre><h3 id="cni&#x63D2;&#x4EF6;&#x539F;&#x7406;">CNI&#x63D2;&#x4EF6;&#x539F;&#x7406;</h3>
-<h4 id="add&#x64CD;&#x4F5C;">ADD&#x64CD;&#x4F5C;</h4>
+</code></pre><h3 id="cni&#x63D2;&#x4EF6;&#x539F;&#x7406;"><a name="cni&#x63D2;&#x4EF6;&#x539F;&#x7406;" class="plugin-anchor" href="#cni&#x63D2;&#x4EF6;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>CNI&#x63D2;&#x4EF6;&#x539F;&#x7406;</h3>
+<h4 id="add&#x64CD;&#x4F5C;"><a name="add&#x64CD;&#x4F5C;" class="plugin-anchor" href="#add&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>ADD&#x64CD;&#x4F5C;</h4>
 <ul>
 <li>&#x4ECE;<code>ovn</code> annotation&#x83B7;&#x53D6;ip/mac/gateway</li>
 <li>&#x5728;&#x5BB9;&#x5668;netns&#x4E2D;&#x914D;&#x7F6E;&#x63A5;&#x53E3;&#x548C;&#x8DEF;&#x7531;</li>
@@ -1564,12 +1568,12 @@ ovn-k8s-gateway-helper --physical-bridge=breth0 --physical-interface=eth0 \
     external_ids:iface-id=namespace_pod \
     external_ids:ip_address=ip_address
 </code></pre>
-<h4 id="del&#x64CD;&#x4F5C;">DEL&#x64CD;&#x4F5C;</h4>
+<h4 id="del&#x64CD;&#x4F5C;"><a name="del&#x64CD;&#x4F5C;" class="plugin-anchor" href="#del&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>DEL&#x64CD;&#x4F5C;</h4>
 <pre><code class="lang-sh">ovs-vsctl del-port br-int port
 </code></pre>
-<h2 id="underlay&#x6A21;&#x5F0F;">Underlay&#x6A21;&#x5F0F;</h2>
+<h2 id="underlay&#x6A21;&#x5F0F;"><a name="underlay&#x6A21;&#x5F0F;" class="plugin-anchor" href="#underlay&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>Underlay&#x6A21;&#x5F0F;</h2>
 <p>&#x6682;&#x672A;&#x5B9E;&#x73B0;&#x3002;</p>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://github.com/openvswitch/ovn-kubernetes" target="_blank">How to Use Open Virtual Networking With Kubernetes</a></li>
 </ul>
@@ -1616,7 +1620,7 @@ ovn-k8s-gateway-helper --physical-bridge=breth0 --physical-interface=eth0 \
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"next":{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"path":"ovs/ovn-docker.md","ref":"ovs/ovn-docker.md","articles":[]},"previous":{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-kubernetes.md","mtime":"2017-12-02T04:14:12.339Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"next":{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"path":"ovs/ovn-docker.md","ref":"ovs/ovn-docker.md","articles":[]},"previous":{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-kubernetes.md","mtime":"2017-12-02T04:14:12.339Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1624,6 +1628,10 @@ ovn-k8s-gateway-helper --physical-bridge=breth0 --physical-interface=eth0 \
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

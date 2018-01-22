@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,16 +1484,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="virtual-routing-and-forwarding-vrf">Virtual Routing and Forwarding (VRF)</h1>
+                                <h1 id="virtual-routing-and-forwarding-vrf"><a name="virtual-routing-and-forwarding-vrf" class="plugin-anchor" href="#virtual-routing-and-forwarding-vrf"><i class="fa fa-link" aria-hidden="true"></i></a>Virtual Routing and Forwarding (VRF)</h1>
 <p><code>Linux</code>&#x5185;&#x6838;&#x7684;<code>Virtual Routing and Forwarding</code> (<code>VRF</code>) &#x662F;&#x7531;&#x8DEF;&#x7531;&#x8868;&#x548C;&#x4E00;&#x7EC4;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7EC4;&#x6210;&#x7684;&#x8DEF;&#x7531;&#x5B9E;&#x4F8B;&#x3002;</p>
-<h2 id="vrf&#x5B89;&#x88C5;">VRF&#x5B89;&#x88C5;</h2>
+<h2 id="vrf&#x5B89;&#x88C5;"><a name="vrf&#x5B89;&#x88C5;" class="plugin-anchor" href="#vrf&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>VRF&#x5B89;&#x88C5;</h2>
 <p><code>Ubuntu</code>&#x9ED8;&#x8BA4;&#x4E0D;&#x5305;&#x62EC;<code>vrf</code>&#x5185;&#x6838;&#x6A21;&#x5757;&#xFF0C;&#x9700;&#x8981;&#x989D;&#x5916;&#x5B89;&#x88C5;:</p>
 <pre><code class="lang-sh">apt-get install linux-headers-4.10.0-14-generic linux-image-extra-4.10.0-14-generic
 reboot
 apt-get install linux-image-extra-$(uname -r)
 modprobe vrf
 </code></pre>
-<h2 id="vrf&#x793A;&#x4F8B;">VRF&#x793A;&#x4F8B;</h2>
+<h2 id="vrf&#x793A;&#x4F8B;"><a name="vrf&#x793A;&#x4F8B;" class="plugin-anchor" href="#vrf&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>VRF&#x793A;&#x4F8B;</h2>
 <pre><code class="lang-sh"><span class="hljs-comment"># create vrf device</span>
 ip link add vrf-blue <span class="hljs-built_in">type</span> vrf table 10
 ip link <span class="hljs-built_in">set</span> dev vrf-blue up
@@ -1517,7 +1521,7 @@ sysctl -w net.ipv6.conf.all.keep_addr_on_down=1
 <span class="hljs-comment"># Additional VRF routes are added to associated table.</span>
 ip route add table 10 ...
 </code></pre>
-<h2 id="&#x8FDB;&#x7A0B;&#x7ED1;&#x5B9A;vrf">&#x8FDB;&#x7A0B;&#x7ED1;&#x5B9A;VRF</h2>
+<h2 id="&#x8FDB;&#x7A0B;&#x7ED1;&#x5B9A;vrf"><a name="&#x8FDB;&#x7A0B;&#x7ED1;&#x5B9A;vrf" class="plugin-anchor" href="#&#x8FDB;&#x7A0B;&#x7ED1;&#x5B9A;vrf"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDB;&#x7A0B;&#x7ED1;&#x5B9A;VRF</h2>
 <p><code>Linux</code>&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;<code>VRF</code>&#x8BBE;&#x5907;&#x4E0A;&#x76D1;&#x542C;<code>socket</code>&#x6765;&#x7ED1;&#x5B9A;VRF&#xFF1A;</p>
 <pre><code class="lang-c">setsockopt(sd, SOL_SOCKET, SO_BINDTODEVICE, dev, <span class="hljs-built_in">strlen</span>(dev)+<span class="hljs-number">1</span>);
 </code></pre>
@@ -1525,29 +1529,29 @@ ip route add table 10 ...
 <pre><code class="lang-bash">sysctl -w net.ipv4.tcp_l3mdev_accept=1
 sysctl -w net.ipv4.udp_l3mdev_accept=1
 </code></pre>
-<h2 id="vrf&#x64CD;&#x4F5C;">VRF&#x64CD;&#x4F5C;</h2>
-<h3 id="&#x521B;&#x5EFA;vrf">&#x521B;&#x5EFA;VRF</h3>
+<h2 id="vrf&#x64CD;&#x4F5C;"><a name="vrf&#x64CD;&#x4F5C;" class="plugin-anchor" href="#vrf&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>VRF&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x521B;&#x5EFA;vrf"><a name="&#x521B;&#x5EFA;vrf" class="plugin-anchor" href="#&#x521B;&#x5EFA;vrf"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;VRF</h3>
 <pre><code class="lang-bash">ip link add dev NAME <span class="hljs-built_in">type</span> vrf table ID
 </code></pre>
-<h3 id="&#x67E5;&#x8BE2;vrf&#x5217;&#x8868;">&#x67E5;&#x8BE2;VRF&#x5217;&#x8868;</h3>
+<h3 id="&#x67E5;&#x8BE2;vrf&#x5217;&#x8868;"><a name="&#x67E5;&#x8BE2;vrf&#x5217;&#x8868;" class="plugin-anchor" href="#&#x67E5;&#x8BE2;vrf&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8BE2;VRF&#x5217;&#x8868;</h3>
 <pre><code class="lang-bash"><span class="hljs-comment"># ip -d link show type vrf</span>
 16: vrf-blue: &lt;NOARP,MASTER,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UP mode DEFAULT group default qlen 1000
     link/ether 9e:9c:8e:7b:32:a4 brd ff:ff:ff:ff:ff:ff promiscuity 0
     vrf table 10 addrgenmode eui64
 </code></pre>
-<h3 id="&#x6DFB;&#x52A0;&#x7F51;&#x5361;&#x5230;vrf">&#x6DFB;&#x52A0;&#x7F51;&#x5361;&#x5230;VRF</h3>
+<h3 id="&#x6DFB;&#x52A0;&#x7F51;&#x5361;&#x5230;vrf"><a name="&#x6DFB;&#x52A0;&#x7F51;&#x5361;&#x5230;vrf" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x7F51;&#x5361;&#x5230;vrf"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x7F51;&#x5361;&#x5230;VRF</h3>
 <pre><code class="lang-bash">ip link <span class="hljs-built_in">set</span> dev eth0 master vrf-blue
 </code></pre>
-<h3 id="&#x67E5;&#x8BE2;vrf&#x90BB;&#x63A5;&#x8868;&#x548C;&#x8DEF;&#x7531;">&#x67E5;&#x8BE2;VRF&#x90BB;&#x63A5;&#x8868;&#x548C;&#x8DEF;&#x7531;</h3>
+<h3 id="&#x67E5;&#x8BE2;vrf&#x90BB;&#x63A5;&#x8868;&#x548C;&#x8DEF;&#x7531;"><a name="&#x67E5;&#x8BE2;vrf&#x90BB;&#x63A5;&#x8868;&#x548C;&#x8DEF;&#x7531;" class="plugin-anchor" href="#&#x67E5;&#x8BE2;vrf&#x90BB;&#x63A5;&#x8868;&#x548C;&#x8DEF;&#x7531;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8BE2;VRF&#x90BB;&#x63A5;&#x8868;&#x548C;&#x8DEF;&#x7531;</h3>
 <pre><code class="lang-bash">ip neigh show vrf vrf-blue
 ip addr show vrf vrf-blue
 ip -br addr show vrf vrf-blue
 ip route show vrf vrf-blue
 </code></pre>
-<h2 id="&#x4ECE;vrf&#x4E2D;&#x5220;&#x9664;&#x7F51;&#x5361;">&#x4ECE;VRF&#x4E2D;&#x5220;&#x9664;&#x7F51;&#x5361;</h2>
+<h2 id="&#x4ECE;vrf&#x4E2D;&#x5220;&#x9664;&#x7F51;&#x5361;"><a name="&#x4ECE;vrf&#x4E2D;&#x5220;&#x9664;&#x7F51;&#x5361;" class="plugin-anchor" href="#&#x4ECE;vrf&#x4E2D;&#x5220;&#x9664;&#x7F51;&#x5361;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECE;VRF&#x4E2D;&#x5220;&#x9664;&#x7F51;&#x5361;</h2>
 <pre><code class="lang-bash">ip link <span class="hljs-built_in">set</span> dev eth0 nomaster
 </code></pre>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://www.kernel.org/doc/Documentation/networking/vrf.txt" target="_blank">Linux kernel documentation</a></li>
 </ul>
@@ -1594,7 +1598,7 @@ ip route show vrf vrf-blue
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"内核VRF","level":"2.2.6","depth":2,"next":{"title":"eBPF","level":"2.2.7","depth":2,"path":"linux/bpf/README.md","ref":"linux/bpf/README.md","articles":[{"title":"bcc","level":"2.2.7.1","depth":3,"path":"linux/bpf/bcc.md","ref":"linux/bpf/bcc.md","articles":[]},{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]}]},"previous":{"title":"SR-IOV","level":"2.2.5","depth":2,"path":"linux/sr-iov.md","ref":"linux/sr-iov.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/vrf.md","mtime":"2017-11-27T16:48:23.466Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"内核VRF","level":"2.2.6","depth":2,"next":{"title":"eBPF","level":"2.2.7","depth":2,"path":"linux/bpf/README.md","ref":"linux/bpf/README.md","articles":[{"title":"bcc","level":"2.2.7.1","depth":3,"path":"linux/bpf/bcc.md","ref":"linux/bpf/bcc.md","articles":[]},{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]}]},"previous":{"title":"SR-IOV","level":"2.2.5","depth":2,"path":"linux/sr-iov.md","ref":"linux/sr-iov.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/vrf.md","mtime":"2017-11-27T16:48:23.466Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1602,6 +1606,10 @@ ip route show vrf vrf-blue
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

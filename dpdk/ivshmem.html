@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,8 +1484,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="dpdk-ring-and-ivshmem">DPDK Ring and ivshmem</h1>
-<h2 id="dpdk-ring">DPDK Ring</h2>
+                                <h1 id="dpdk-ring-and-ivshmem"><a name="dpdk-ring-and-ivshmem" class="plugin-anchor" href="#dpdk-ring-and-ivshmem"><i class="fa fa-link" aria-hidden="true"></i></a>DPDK Ring and ivshmem</h1>
+<h2 id="dpdk-ring"><a name="dpdk-ring" class="plugin-anchor" href="#dpdk-ring"><i class="fa fa-link" aria-hidden="true"></i></a>DPDK Ring</h2>
 <p><code>DPDK Ring</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;<code>FIFO</code>&#x65E0;&#x9501;&#x961F;&#x5217;&#xFF0C;&#x652F;&#x6301;&#x4E30;&#x5BCC;&#x7684;&#x961F;&#x5217;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;</p>
 <ul>
 <li>Multi-consumer or single-consumer dequeue</li>
@@ -1495,7 +1499,7 @@
 <blockquote>
 <p>&#x56FE;&#x7247;&#x6765;&#x6E90;<a href="http://dpdk.org/doc/guides/prog_guide/ring_lib.html" target="_blank">Ring Library - dpdk.org</a></p>
 </blockquote>
-<h2 id="ivshmem">ivshmem</h2>
+<h2 id="ivshmem"><a name="ivshmem" class="plugin-anchor" href="#ivshmem"><i class="fa fa-link" aria-hidden="true"></i></a>ivshmem</h2>
 <p><code>ivshmem</code>&#x5219;&#x901A;&#x8FC7;&#x628A;&#x5185;&#x5B58;&#x6620;&#x5C04;&#x6210;&#x865A;&#x62DF;&#x673A;PCI&#x8BBE;&#x5907;&#x63D0;&#x4F9B;&#x4E86;&#x865A;&#x62DF;&#x673A;&#x95F4;(<code>host-to-guest or guest-to-guest</code>)&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x7684;&#x673A;&#x5236;&#x3002;</p>
 <p><img src="images/typical-ivshmem-use-case.png" alt="Typical ivshmem use case"></p>
 <blockquote>
@@ -1506,7 +1510,7 @@
 <blockquote>
 <p>&#x56FE;&#x7247;&#x6765;&#x6E90;<a href="http://blog.csdn.net/quqi99/article/details/51087955" target="_blank">&#x4F7F;&#x7528;OVS DPDK (by quqi99)</a></p>
 </blockquote>
-<h3 id="ivshmem&#x4F7F;&#x7528;&#x793A;&#x4F8B;">ivshmem&#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3>
+<h3 id="ivshmem&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><a name="ivshmem&#x4F7F;&#x7528;&#x793A;&#x4F8B;" class="plugin-anchor" href="#ivshmem&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>ivshmem&#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3>
 <pre><code class="lang-sh"><span class="hljs-comment"># on the host</span>
 mount tmpfs /dev/shm -t tmpfs -osize=32m
 ivshmem_server -m 64 -p/tmp/nahanni &amp;
@@ -1569,7 +1573,7 @@ mknod-mode=666 /dev/ivshmem c 245 0
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ring和共享内存","level":"2.4.5","depth":2,"next":{"title":"PCIe","level":"2.4.6","depth":2,"path":"dpdk/PCIe.md","ref":"dpdk/PCIe.md","articles":[]},"previous":{"title":"NUMA","level":"2.4.4","depth":2,"path":"dpdk/numa.md","ref":"dpdk/numa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dpdk/ivshmem.md","mtime":"2017-12-07T15:45:42.687Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ring和共享内存","level":"2.4.5","depth":2,"next":{"title":"PCIe","level":"2.4.6","depth":2,"path":"dpdk/PCIe.md","ref":"dpdk/PCIe.md","articles":[]},"previous":{"title":"NUMA","level":"2.4.4","depth":2,"path":"dpdk/numa.md","ref":"dpdk/numa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dpdk/ivshmem.md","mtime":"2017-12-07T15:45:42.687Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1577,6 +1581,10 @@ mknod-mode=666 /dev/ivshmem c 245 0
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

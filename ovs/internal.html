@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,8 +1484,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ovs&#x539F;&#x7406;">OVS&#x539F;&#x7406;</h1>
-<h2 id="ovs&#x67B6;&#x6784;">OVS&#x67B6;&#x6784;</h2>
+                                <h1 id="ovs&#x539F;&#x7406;"><a name="ovs&#x539F;&#x7406;" class="plugin-anchor" href="#ovs&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>OVS&#x539F;&#x7406;</h1>
+<h2 id="ovs&#x67B6;&#x6784;"><a name="ovs&#x67B6;&#x6784;" class="plugin-anchor" href="#ovs&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>OVS&#x67B6;&#x6784;</h2>
 <p><img src="images/ovs-architecture.jpg" alt="ovs architecture"></p>
 <blockquote>
 <p>&#x56FE;&#x7247;&#x6765;&#x6E90;<a href="https://www.slideshare.net/ThomasGraf5/2015-fosdem-ovs-stateful-services" target="_blank">2015 FOSDEM - OVS Stateful Services</a></p>
@@ -1491,18 +1495,18 @@
 <blockquote>
 <p>&#x56FE;&#x7247;&#x6765;&#x6E90;<a href="https://www.slideshare.net/rajdeep/openvswitch-deep-dive" target="_blank">OpenvSwitch Deep Dive</a></p>
 </blockquote>
-<h3 id="&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x804C;&#x8D23;">&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x804C;&#x8D23;</h3>
+<h3 id="&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x804C;&#x8D23;"><a name="&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x804C;&#x8D23;" class="plugin-anchor" href="#&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x804C;&#x8D23;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x804C;&#x8D23;</h3>
 <ul>
 <li><code>datapath</code>&#x662F;&#x8D1F;&#x8D23;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x7684;&#x5185;&#x6838;&#x6A21;&#x5757;&#xFF0C;&#x5176;&#x4ECE;&#x7F51;&#x53E3;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5FEB;&#x901F;&#x5339;&#x914D;Flowtable&#x4E2D;&#x7684;&#x6D41;&#x8868;&#x9879;&#xFF0C;&#x6210;&#x529F;&#x7684;&#x76F4;&#x63A5;&#x8F6C;&#x53D1;&#xFF0C;&#x5931;&#x8D25;&#x7684;&#x4E0A;&#x4EA4;<code>vswitchd</code>&#x5904;&#x7406;&#x3002;&#x5B83;&#x5728;&#x521D;&#x59CB;&#x5316;&#x548C;<code>port binding</code>&#x7684;&#x65F6;&#x5019;&#x6CE8;&#x518C;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#xFF0C;&#x628A;&#x7AEF;&#x53E3;&#x7684;&#x62A5;&#x6587;&#x5904;&#x7406;&#x63A5;&#x7BA1;&#x5230;&#x5185;&#x6838;&#x6A21;&#x5757;&#x3002;</li>
 <li><code>vswitchd</code>&#x662F;&#x4E00;&#x4E2A;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#xFF0C;&#x662F;ovs&#x7684;&#x7BA1;&#x7406;&#x548C;&#x63A7;&#x5236;&#x670D;&#x52A1;&#xFF0C;&#x901A;&#x8FC7;unix socket&#x5C06;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x5230;<code>ovsdb</code>&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>netlink</code>&#x548C;&#x5185;&#x6838;&#x6A21;&#x5757;&#x4EA4;&#x4E92;</li>
 <li><code>ovsdb</code>&#x5219;&#x662F;<code>ovs</code>&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4FDD;&#x5B58;&#x4E86;<code>ovs</code>&#x914D;&#x7F6E;&#x4FE1;&#x606F;</li>
 </ul>
-<h2 id="&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+<h2 id="&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7ED3;&#x6784;"><a name="&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7ED3;&#x6784;" class="plugin-anchor" href="#&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x8981;&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
 <p><img src="images/ovs-data-structure.png" alt="ovs-data-structure">
 (&#x56FE;&#x7247;&#x6765;&#x81EA;<a href="http://blog.csdn.net/yuzhihui_no1/article/details/39188373" target="_blank">csdn</a>)</p>
-<h2 id="&#x4E3B;&#x8981;&#x6D41;&#x7A0B;">&#x4E3B;&#x8981;&#x6D41;&#x7A0B;</h2>
+<h2 id="&#x4E3B;&#x8981;&#x6D41;&#x7A0B;"><a name="&#x4E3B;&#x8981;&#x6D41;&#x7A0B;" class="plugin-anchor" href="#&#x4E3B;&#x8981;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x8981;&#x6D41;&#x7A0B;</h2>
 <p><em>&#x6CE8;&#xFF1A;&#x90E8;&#x5206;&#x8F6C;&#x8F7D;&#x81EA;<a href="http://www.jianshu.com/p/bf112793d658" target="_blank">OVS &#x6E90;&#x7801;&#x5206;&#x6790;&#x6574;&#x7406;</a></em></p>
-<h3 id="&#x6DFB;&#x52A0;&#x7F51;&#x6865;">&#x6DFB;&#x52A0;&#x7F51;&#x6865;</h3>
+<h3 id="&#x6DFB;&#x52A0;&#x7F51;&#x6865;"><a name="&#x6DFB;&#x52A0;&#x7F51;&#x6865;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x7F51;&#x6865;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x7F51;&#x6865;</h3>
 <ol>
 <li>&#x952E;&#x5165;&#x547D;&#x4EE4;<code>ovs-vsctl add-br testBR</code></li>
 <li>&#x5185;&#x6838;&#x4E2D;&#x7684; <code>openvswitch.ko</code> &#x6536;&#x5230;&#x4E00;&#x4E2A;&#x6DFB;&#x52A0;&#x7F51;&#x6865;&#x7684;&#x547D;&#x4EE4;&#x65F6;&#x5019;&#x2014;&#x2014;&#x5373;&#x6536;&#x5230; <code>OVS_DATAPATH_FAMILY</code>&#x901A;&#x9053;&#x7684; <code>OVS_DP_CMD_NEW</code>&#x547D;&#x4EE4;&#x3002;&#x8BE5;&#x547D;&#x4EE4;&#x7ED1;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E3A; <code>ovs_dp_cmd_new</code></li>
@@ -1519,7 +1523,7 @@
 </ol>
 <p><img src="images/add-bridge.jpg" alt="add bridge">
 (&#x56FE;&#x7247;&#x6765;&#x81EA;<a href="http://www.jianshu.com/p/bf112793d658" target="_blank">&#x7B80;&#x4E66;</a>)</p>
-<h3 id="&#x6D41;&#x8868;&#x5339;&#x914D;">&#x6D41;&#x8868;&#x5339;&#x914D;</h3>
+<h3 id="&#x6D41;&#x8868;&#x5339;&#x914D;"><a name="&#x6D41;&#x8868;&#x5339;&#x914D;" class="plugin-anchor" href="#&#x6D41;&#x8868;&#x5339;&#x914D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D41;&#x8868;&#x5339;&#x914D;</h3>
 <ol>
 <li><code>flow_lookup()</code>&#x67E5;&#x627E;&#x5BF9;&#x5E94;&#x7684;&#x6D41;&#x8868;&#x9879;</li>
 <li><code>for</code> &#x5FAA;&#x73AF;&#x8C03;&#x7528; <code>rcu_dereference_ovs</code> &#x5BF9;&#x6D41;&#x8868;&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x7684; <code>mask_list</code> &#x6210;&#x5458;&#x904D;&#x5386;&#xFF0C;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x7684; &#x6210;&#x5458;</li>
@@ -1531,7 +1535,7 @@
 <li><code>netdev_vport-&gt;dev</code> &#x6536;&#x5230;&#x7F51;&#x5305;&#x65F6;&#x7684;&#x76F8;&#x5173;&#x6570;&#x636E;&#x7531; <code>netdev_frame_hook()</code>&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x90FD;&#x662F;&#x4E9B;&#x8F85;&#x52A9;&#x5904;&#x7406;&#xFF0C;&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x5404;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF0C;&#x5728; <code>netdev_port_receive()</code>&#x3010;&#x8FD9;&#x91CC;&#x4F1A;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x5305;&#x7684;&#x62F7;&#x8D1D;&#xFF0C;&#x907F;&#x514D;&#x635F;&#x574F;&#x3011;&#x8FDB;&#x5165; <code>ovs_vport_receive()</code>&#x56DE;&#x5230; <code>vport.c</code>&#xFF0C;&#x4ECE; <code>ovs_dp_process_receive_packet()</code>&#x56DE;&#x5230; <code>datapath.c</code>&#xFF0C;&#x8FDB;&#x884C;&#x7EDF;&#x4E00;&#x5904;&#x7406;</li>
 </ol>
 <p><img src="images/flow-lookup.jpg" alt="ovs-flow-lookup"></p>
-<h3 id="&#x6536;&#x5305;&#x5904;&#x7406;">&#x6536;&#x5305;&#x5904;&#x7406;</h3>
+<h3 id="&#x6536;&#x5305;&#x5904;&#x7406;"><a name="&#x6536;&#x5305;&#x5904;&#x7406;" class="plugin-anchor" href="#&#x6536;&#x5305;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6536;&#x5305;&#x5904;&#x7406;</h3>
 <ol>
 <li><code>ovs_vport_receive_packets()</code>&#x8C03;&#x7528;<code>ovs_flow_extract</code>&#x57FA;&#x4E8E;<code>skb</code>&#x751F;&#x6210;<code>key</code>&#x503C;&#xFF0C;&#x5E76;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x6709;&#x9519;,&#x7136;&#x540E;&#x8C03;&#x7528;<code>ovs_dp_process_packet</code>&#x3002;&#x4EA4;&#x4ED8;&#x7ED9;<code>datapath</code>&#x5904;&#x7406;</li>
 <li><code>ovs_flow_tbl_lookup_stats</code>&#x3002;&#x57FA;&#x4E8E;&#x524D;&#x9762;&#x751F;&#x6210;&#x7684;<code>key</code>&#x503C;&#x8FDB;&#x884C;&#x6D41;&#x8868;&#x67E5;&#x627E;&#xFF0C;&#x8FD4;&#x56DE;&#x5339;&#x914D;&#x7684;&#x6D41;&#x8868;&#x9879;&#xFF0C;&#x7ED3;&#x6784;&#x4E3A;<code>sw_flow</code>&#x3002;</li>
@@ -1539,7 +1543,7 @@
 <li>&#x82E5;&#x5B58;&#x5728;&#x5339;&#x914D;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8C03;&#x7528;<code>ovs_execute_actions</code>&#x6267;&#x884C;&#x5BF9;&#x5E94;&#x7684;<code>action</code>&#xFF0C;&#x6BD4;&#x5982;&#x6DFB;&#x52A0;<code>vlan</code>&#x5934;&#xFF0C;&#x8F6C;&#x53D1;&#x5230;&#x67D0;&#x4E2A;port&#x7B49;&#x3002;</li>
 </ol>
 <p><img src="images/receive-packet.jpg" alt="ovs receive packet"></p>
-<h3 id="upcall-&#x6D88;&#x606F;&#x5904;&#x7406;">upcall &#x6D88;&#x606F;&#x5904;&#x7406;</h3>
+<h3 id="upcall-&#x6D88;&#x606F;&#x5904;&#x7406;"><a name="upcall-&#x6D88;&#x606F;&#x5904;&#x7406;" class="plugin-anchor" href="#upcall-&#x6D88;&#x606F;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>upcall &#x6D88;&#x606F;&#x5904;&#x7406;</h3>
 <ol>
 <li><code>ovs_dp_upcall()</code>&#x9996;&#x5148;&#x8C03;&#x7528;<code>err=queue_userspace_packet()</code>&#x5C06;&#x4FE1;&#x606F;&#x6392;&#x961F;&#x53D1;&#x5230;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x53BB;</li>
 <li><code>dp_ifindex=get_dpifindex(dp)</code>&#x83B7;&#x53D6;&#x7F51;&#x5361;&#x8BBE;&#x5907;&#x7D22;&#x5F15;&#x53F7;</li>
@@ -1551,7 +1555,7 @@
 <li><code>err=genlmsg_unicast()</code>,&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x53BB;&#x5904;&#x7406;</li>
 </ol>
 <p><img src="images/upcall.jpg" alt="upcall"></p>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://www.slideshare.net/rajdeep/openvswitch-deep-dive" target="_blank">OpenvSwitch Deep Dive</a></li>
 <li><a href="https://www.slideshare.net/ThomasGraf5/2015-fosdem-ovs-stateful-services" target="_blank">2015 FOSDEM - OVS Stateful Services</a></li>
@@ -1602,7 +1606,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVS原理","level":"2.3.3","depth":2,"next":{"title":"Open Virtual Network","level":"2.3.4","depth":2,"path":"ovs/ovn.md","ref":"ovs/ovn.md","articles":[{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"path":"ovs/ovn-ubuntu.md","ref":"ovs/ovn-ubuntu.md","articles":[]},{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"path":"ovs/ovn-docker.md","ref":"ovs/ovn-docker.md","articles":[]},{"title":"OVN OpenStack","level":"2.3.4.6","depth":3,"path":"ovs/ovn-openstack.md","ref":"ovs/ovn-openstack.md","articles":[]}]},"previous":{"title":"OVS编译","level":"2.3.2","depth":2,"path":"ovs/build.md","ref":"ovs/build.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/internal.md","mtime":"2017-11-30T15:28:26.474Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVS原理","level":"2.3.3","depth":2,"next":{"title":"Open Virtual Network","level":"2.3.4","depth":2,"path":"ovs/ovn.md","ref":"ovs/ovn.md","articles":[{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"path":"ovs/ovn-ubuntu.md","ref":"ovs/ovn-ubuntu.md","articles":[]},{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"path":"ovs/ovn-docker.md","ref":"ovs/ovn-docker.md","articles":[]},{"title":"OVN OpenStack","level":"2.3.4.6","depth":3,"path":"ovs/ovn-openstack.md","ref":"ovs/ovn-openstack.md","articles":[]}]},"previous":{"title":"OVS编译","level":"2.3.2","depth":2,"path":"ovs/build.md","ref":"ovs/build.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/internal.md","mtime":"2017-11-30T15:28:26.474Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1610,6 +1614,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

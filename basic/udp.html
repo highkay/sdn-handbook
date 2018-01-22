@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,7 +1484,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="udp">UDP</h1>
+                                <h1 id="udp"><a name="udp" class="plugin-anchor" href="#udp"><i class="fa fa-link" aria-hidden="true"></i></a>UDP</h1>
 <p><code>UDP</code>&#x662F;&#x4E00;&#x79CD;&#x5BF9;&#x8C61;&#x6570;&#x636E;&#x62A5;&#x7684;&#x4F20;&#x8F93;&#x5C42;&#x534F;&#x8BAE;&#xFF0C;&#x5B83;&#x4E0D;&#x63D0;&#x4F9B;&#x53EF;&#x9760;&#x6027;&#xFF0C;&#x5176;&#x6570;&#x636E;&#x62A5;&#x88AB;&#x5C01;&#x88C5;&#x5728;<code>IP</code>&#x6570;&#x636E;&#x62A5;&#x4E2D;&#xFF0C;&#x5C01;&#x88C5;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
 <p><img src="images/UDP-packaging-format.png" alt="UDP&#x5C01;&#x88C5;&#x683C;&#x5F0F;"></p>
 <p>&#x9996;&#x90E8;&#x683C;&#x5F0F;&#x4E3A;</p>
@@ -1492,7 +1496,7 @@
 <li><code>UDP</code>&#x6570;&#x636E;&#x62A5;&#x7684;&#x957F;&#x5EA6;&#x53EF;&#x4EE5;&#x4E3A;&#x5947;&#x6570;&#x5B57;&#x8282;&#xFF0C;&#x4F46;&#x662F;&#x68C0;&#x9A8C;&#x548C;&#x7B97;&#x6CD5;&#x662F;&#x628A;&#x82E5;&#x5E72;&#x4E2A;<code>16bit</code>&#x5B57;&#x76F8;&#x52A0;&#x3002;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#x5FC5;&#x8981;&#x65F6;&#x5728;&#x6700;&#x540E;&#x589E;&#x52A0;&#x586B;&#x5145;&#x5B57;&#x8282;0&#xFF0C;</li>
 </ul>
 <p>&#x8FD9;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x68C0;&#x9A8C;&#x548C;&#x7684;&#x8BA1;&#x7B97;&#x3002;<code>UDP</code>&#x6570;&#x636E;&#x62A5;&#x548C;<code>TCP</code>&#x6BB5;&#x90FD;&#x5305;&#x542B;&#x4E00;&#x4E2A;12&#x5B57;&#x8282;&#x957F;&#x7684;&#x4F2A;&#x9996;&#x90E8;&#xFF0C;&#x5B83;&#x662F;&#x4E3A;&#x4E86;&#x8BA1;&#x7B97;&#x68C0;&#x9A8C;&#x548C;&#x800C;&#x8BBE;&#x7F6E;&#x7684;&#x3002;&#x4F2A;&#x9996;&#x90E8;&#x5305;&#x542B;<code>IP</code>&#x9996;&#x90E8;&#x4E00;&#x4E9B;&#x5B57;&#x6BB5;&#x3002;</p>
-<h2 id="ip&#x5206;&#x7247;">IP&#x5206;&#x7247;</h2>
+<h2 id="ip&#x5206;&#x7247;"><a name="ip&#x5206;&#x7247;" class="plugin-anchor" href="#ip&#x5206;&#x7247;"><i class="fa fa-link" aria-hidden="true"></i></a>IP&#x5206;&#x7247;</h2>
 <p>&#x4EE5;&#x592A;&#x7F51;&#x548C;<code>802.3</code>&#x5BF9;&#x6570;&#x636E;&#x5E27;&#x7684;&#x957F;&#x5EA6;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x9650;&#x5236;&#xFF0C;&#x5176;&#x6700;&#x5927;&#x503C;&#x5206;&#x522B;&#x662F;<code>1500</code>&#x548C;<code>1492</code>&#x4E2A;&#x5B57;&#x8282;&#x3002;&#x94FE;&#x8DEF;&#x5C42;&#x7684;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x79F0;&#x4F5C;<code>MTU</code>&#x3002;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7F51;&#x7EDC;&#x5927;&#x591A;&#x6570;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x4E0A;&#x9650;&#x3002;&#x5982;&#x679C;IP&#x5C42;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8981;&#x4F20;&#xFF0C;&#x4E14;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x6BD4;&#x94FE;&#x8DEF;&#x5C42;&#x7684;<code>MTU</code>&#x8FD8;&#x5927;&#xFF0C;&#x90A3;&#x4E48;<code>IP</code>&#x5C42;&#x5C31;&#x8981;&#x8FDB;&#x884C;&#x5206;&#x7247;&#xFF08;<code>fragmentation</code>&#xFF09;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x62A5;&#x5206;&#x6210;&#x82E5;&#x5E72;&#x7247;&#xFF0C;&#x8FD9;&#x6837;&#x6BCF;&#x4E00;&#x4E2A;&#x5206;&#x7247;&#x90FD;&#x5C0F;&#x4E8E;<code>MTU</code>&#x3002;&#x5F53;<code>IP</code>&#x6570;&#x636E;&#x62A5;&#x88AB;&#x5206;&#x7247;&#x540E;&#xFF0C;&#x6BCF;&#x4E00;&#x7247;&#x90FD;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5206;&#x7EC4;&#xFF0C;&#x5177;&#x6709;&#x81EA;&#x5DF1;&#x7684;<code>IP</code>&#x9996;&#x90E8;&#xFF0C;&#x5E76;&#x5728;&#x9009;&#x62E9;&#x8DEF;&#x7531;&#x65F6;&#x4E0E;&#x5176;&#x4ED6;&#x5206;&#x7EC4;&#x72EC;&#x7ACB;&#x3002;</p>
 <p>&#x628A;&#x4E00;&#x4EFD;<code>IP</code>&#x6570;&#x636E;&#x62A5;&#x8FDB;&#x884C;&#x5206;&#x7247;&#x4EE5;&#x540E;&#xFF0C;&#x7531;&#x5230;&#x8FBE;&#x76EE;&#x7684;&#x7AEF;&#x7684;<code>IP</code>&#x5C42;&#x6765;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x7EC4;&#x88C5;&#xFF0C;&#x5176;&#x76EE;&#x7684;&#x662F;&#x4F7F;&#x5206;&#x7247;&#x548C;&#x91CD;&#x65B0;&#x7EC4;&#x88C5;&#x8FC7;&#x7A0B;&#x5BF9;&#x8FD0;&#x8F93;&#x5C42;&#xFF08;<code>TCP/UDP</code>&#xFF09;&#x662F;&#x900F;&#x660E;&#x7684;&#x3002;&#x7531;&#x4E8E;&#x6BCF;&#x4E00;&#x5206;&#x7247;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x5305;&#xFF0C;&#x5F53;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x62A5;&#x7684;&#x7247;&#x5230;&#x8FBE;&#x76EE;&#x7684;&#x7AEF;&#x65F6;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5931;&#x5E8F;&#xFF0C;&#x4F46;&#x662F;&#x5728;<code>IP</code>&#x9996;&#x90E8;&#x4E2D;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x4FE1;&#x606F;&#x8BA9;&#x63A5;&#x6536;&#x7AEF;&#x80FD;&#x6B63;&#x786E;&#x7EC4;&#x88C5;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x62A5;&#x7247;&#x3002;</p>
 <p>&#x5C3D;&#x7BA1;<code>IP</code>&#x5206;&#x7247;&#x8FC7;&#x7A0B;&#x770B;&#x8D77;&#x6765;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x4F46;&#x6709;&#x4E00;&#x70B9;&#x8BA9;&#x4EBA;&#x4E0D;&#x60F3;&#x4F7F;&#x7528;&#x5B83;&#xFF1A;&#x5373;&#x4F7F;&#x53EA;&#x4E22;&#x5931;&#x4E00;&#x7247;&#x6570;&#x636E;&#x4E5F;&#x8981;&#x91CD;&#x65B0;&#x4F20;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x62A5;&#x3002;</p>
@@ -1511,7 +1515,7 @@
 <li>&#x7406;&#x8BBA;&#x4E0A;&#xFF0C;<code>UDP</code>&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x4E3A;&#xFF1A;<code>65535-20</code>&#x5B57;&#x8282;<code>IP</code>&#x9996;&#x90E8;&#x957F;&#x5EA6;<code>-8</code>&#x5B57;&#x8282;<code>UDP</code>&#x9996;&#x90E8;&#x957F;&#x5EA6;=<code>65507</code>&#x3002;&#x4F46;&#x662F;&#x5927;&#x591A;&#x662F;&#x5B9E;&#x73B0;&#x90FD;&#x6BD4;&#x8FD9;&#x4E2A;&#x503C;&#x5C0F;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x53D7;&#x9650;&#x4E8E;<code>socket</code>&#x63A5;&#x53E3;&#x4EE5;&#x53CA;<code>TCP/IP</code>&#x5185;&#x6838;&#x7684;&#x9650;&#x5236;&#x3002;&#x5927;&#x90E8;&#x5206;&#x7CFB;&#x7EDF;&#x90FD;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x8BFB;&#x5199;&#x5927;&#x4E8E;<code>8192</code>&#x5B57;&#x8282;&#x7684;<code>UDP</code>&#x6570;&#x636E;&#x62A5;&#x3002;</li>
 <li>&#x5F53;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x7684;&#x5904;&#x7406;&#x901F;&#x5EA6;&#x8D76;&#x4E0D;&#x4E0A;&#x6570;&#x636E;&#x63A5;&#x6536;&#x7684;&#x901F;&#x5EA6;&#xFF0C;&#x56E0;&#x4E3A;&#x63A5;&#x53D7;&#x4E3B;&#x673A;&#x7684;<code>IP</code>&#x5C42;&#x7F13;&#x5B58;&#x4F1A;&#x88AB;&#x5360;&#x6EE1;&#xFF0C;&#x6240;&#x4EE5;&#x4E3B;&#x673A;&#x5C31;&#x4F1A;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;<code>ICMP</code>&#x6E90;&#x7AD9;&#x6291;&#x5236;&#x5DEE;&#x9519;&#x62A5;&#x6587;&#x3002;</li>
 </ul>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/User_Datagram_Protoco" target="_blank">User Datagram Protocol</a></li>
 <li><a href="https://www.ietf.org/rfc/rfc768.txt" target="_blank">UDP - IETF</a></li>
@@ -1559,7 +1563,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"UDP","level":"2.1.6","depth":2,"next":{"title":"DHCP/DNS","level":"2.1.7","depth":2,"path":"basic/dhcp.md","ref":"basic/dhcp.md","articles":[]},"previous":{"title":"交换机","level":"2.1.5","depth":2,"path":"basic/switch.md","ref":"basic/switch.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"basic/udp.md","mtime":"2017-11-24T12:56:28.533Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"UDP","level":"2.1.6","depth":2,"next":{"title":"DHCP/DNS","level":"2.1.7","depth":2,"path":"basic/dhcp.md","ref":"basic/dhcp.md","articles":[]},"previous":{"title":"交换机","level":"2.1.5","depth":2,"path":"basic/switch.md","ref":"basic/switch.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"basic/udp.md","mtime":"2017-11-24T12:56:28.533Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1567,6 +1571,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

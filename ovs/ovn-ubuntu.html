@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,16 +1484,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="build-ovn">Build OVN</h1>
-<h2 id="update--install-dependencies">Update &amp; install dependencies</h2>
+                                <h1 id="build-ovn"><a name="build-ovn" class="plugin-anchor" href="#build-ovn"><i class="fa fa-link" aria-hidden="true"></i></a>Build OVN</h1>
+<h2 id="update--install-dependencies"><a name="update--install-dependencies" class="plugin-anchor" href="#update--install-dependencies"><i class="fa fa-link" aria-hidden="true"></i></a>Update &amp; install dependencies</h2>
 <pre><code class="lang-sh">apt-get update
 apt-get -y install build-essential fakeroot
 </code></pre>
-<h3 id="install-build-depends-from-debiancontrol-file">Install Build-Depends from debian/control file</h3>
+<h3 id="install-build-depends-from-debiancontrol-file"><a name="install-build-depends-from-debiancontrol-file" class="plugin-anchor" href="#install-build-depends-from-debiancontrol-file"><i class="fa fa-link" aria-hidden="true"></i></a>Install Build-Depends from debian/control file</h3>
 <pre><code class="lang-sh">apt-get -y install graphviz autoconf automake bzip2 debhelper dh-autoreconf libssl-dev libtool openssl
 apt-get -y install procps python-all python-twisted-conch python-zopeinterface python-six
 </code></pre>
-<h3 id="check-the-working-directory--build">Check the working directory &amp; build</h3>
+<h3 id="check-the-working-directory--build"><a name="check-the-working-directory--build" class="plugin-anchor" href="#check-the-working-directory--build"><i class="fa fa-link" aria-hidden="true"></i></a>Check the working directory &amp; build</h3>
 <pre><code class="lang-sh">curl -o openvswitch-2.7.0.tar.gz http://openvswitch.org/releases/openvswitch-2.7.0.tar.gz
 tar zxvf openvswitch-2.7.0.tar.gz
 <span class="hljs-built_in">cd</span> openvswitch-2.7.0
@@ -1501,12 +1505,12 @@ dpkg-checkbuilddeps
 </code></pre>
 <p>The .deb files for ovs will be built and placed in the parent directory (ie. in &#x2026;/). The next step is to
 build the kernel modules.</p>
-<h3 id="install-datapath-sources">Install datapath sources</h3>
+<h3 id="install-datapath-sources"><a name="install-datapath-sources" class="plugin-anchor" href="#install-datapath-sources"><i class="fa fa-link" aria-hidden="true"></i></a>Install datapath sources</h3>
 <pre><code class="lang-sh"><span class="hljs-built_in">cd</span> ..
 apt-get -y install module-assistant
 dpkg -i openvswitch-datapath-source_2.7.0-1_all.deb
 </code></pre>
-<h3 id="build-kernel-modules-using-module-assistant">Build kernel modules using module-assistant</h3>
+<h3 id="build-kernel-modules-using-module-assistant"><a name="build-kernel-modules-using-module-assistant" class="plugin-anchor" href="#build-kernel-modules-using-module-assistant"><i class="fa fa-link" aria-hidden="true"></i></a>Build kernel modules using module-assistant</h3>
 <pre><code class="lang-sh">m<span class="hljs-_">-a</span> prepare
 m<span class="hljs-_">-a</span> build openvswitch-datapath
 </code></pre>
@@ -1569,7 +1573,7 @@ ovs-vsctl <span class="hljs-built_in">set</span> Open_vSwitch . external_ids:ovn
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"next":{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},"previous":{"title":"Open Virtual Network","level":"2.3.4","depth":2,"path":"ovs/ovn.md","ref":"ovs/ovn.md","articles":[{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"path":"ovs/ovn-ubuntu.md","ref":"ovs/ovn-ubuntu.md","articles":[]},{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"path":"ovs/ovn-docker.md","ref":"ovs/ovn-docker.md","articles":[]},{"title":"OVN OpenStack","level":"2.3.4.6","depth":3,"path":"ovs/ovn-openstack.md","ref":"ovs/ovn-openstack.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-ubuntu.md","mtime":"2017-12-02T04:14:12.339Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"next":{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},"previous":{"title":"Open Virtual Network","level":"2.3.4","depth":2,"path":"ovs/ovn.md","ref":"ovs/ovn.md","articles":[{"title":"OVN在Ubuntu编译","level":"2.3.4.1","depth":3,"path":"ovs/ovn-ubuntu.md","ref":"ovs/ovn-ubuntu.md","articles":[]},{"title":"OVN实践","level":"2.3.4.2","depth":3,"path":"ovs/ovn-internal.md","ref":"ovs/ovn-internal.md","articles":[]},{"title":"OVN高可用","level":"2.3.4.3","depth":3,"path":"ovs/ovn-ha.md","ref":"ovs/ovn-ha.md","articles":[]},{"title":"OVN Kubernetes插件","level":"2.3.4.4","depth":3,"path":"ovs/ovn-kubernetes.md","ref":"ovs/ovn-kubernetes.md","articles":[]},{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"path":"ovs/ovn-docker.md","ref":"ovs/ovn-docker.md","articles":[]},{"title":"OVN OpenStack","level":"2.3.4.6","depth":3,"path":"ovs/ovn-openstack.md","ref":"ovs/ovn-openstack.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-ubuntu.md","mtime":"2017-12-02T04:14:12.339Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1577,6 +1581,10 @@ ovs-vsctl <span class="hljs-built_in">set</span> Open_vSwitch . external_ids:ovn
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

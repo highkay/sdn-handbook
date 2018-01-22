@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,43 +1484,43 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="scapy">scapy</h1>
+                                <h1 id="scapy"><a name="scapy" class="plugin-anchor" href="#scapy"><i class="fa fa-link" aria-hidden="true"></i></a>scapy</h1>
 <p><code>scapy</code>&#x662F;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;<code>python</code>&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x5305;&#x5904;&#x7406;&#x5E93;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x6216;&#x89E3;&#x7801;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x7AEF;&#x53E3;&#x626B;&#x63CF;&#x3001;&#x63A2;&#x6D4B;&#x3001;&#x7F51;&#x7EDC;&#x6D4B;&#x8BD5;&#x7B49;&#x3002;</p>
-<h2 id="scapy&#x5B89;&#x88C5;">scapy&#x5B89;&#x88C5;</h2>
+<h2 id="scapy&#x5B89;&#x88C5;"><a name="scapy&#x5B89;&#x88C5;" class="plugin-anchor" href="#scapy&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>scapy&#x5B89;&#x88C5;</h2>
 <pre><code class="lang-bash">pip install scapy
 </code></pre>
-<h2 id="&#x7B80;&#x5355;&#x4F7F;&#x7528;">&#x7B80;&#x5355;&#x4F7F;&#x7528;</h2>
+<h2 id="&#x7B80;&#x5355;&#x4F7F;&#x7528;"><a name="&#x7B80;&#x5355;&#x4F7F;&#x7528;" class="plugin-anchor" href="#&#x7B80;&#x5355;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x5355;&#x4F7F;&#x7528;</h2>
 <p><code>scapy</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4EA4;&#x4E92;&#x5F0F;&#x754C;&#x9762;&#xFF0C;&#x76F4;&#x63A5;&#x8FD0;&#x884C;<code>scapy</code>&#x547D;&#x4EE4;&#x5373;&#x53EF;&#x8FDB;&#x5165;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<code>python</code>&#x4EA4;&#x4E92;&#x5F0F;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x5BFC;&#x5165;<code>scapy</code>&#x5305;&#x8FDB;&#x5165;</p>
 <pre><code class="lang-python"><span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
 </code></pre>
-<h3 id="&#x67E5;&#x770B;&#x6240;&#x6709;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x9884;&#x5236;&#x5DE5;&#x5177;&#xFF1A;">&#x67E5;&#x770B;&#x6240;&#x6709;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x9884;&#x5236;&#x5DE5;&#x5177;&#xFF1A;</h3>
+<h3 id="&#x67E5;&#x770B;&#x6240;&#x6709;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x9884;&#x5236;&#x5DE5;&#x5177;&#xFF1A;"><a name="&#x67E5;&#x770B;&#x6240;&#x6709;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x9884;&#x5236;&#x5DE5;&#x5177;&#xFF1A;" class="plugin-anchor" href="#&#x67E5;&#x770B;&#x6240;&#x6709;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x9884;&#x5236;&#x5DE5;&#x5177;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x6240;&#x6709;&#x652F;&#x6301;&#x7684;&#x534F;&#x8BAE;&#x548C;&#x9884;&#x5236;&#x5DE5;&#x5177;&#xFF1A;</h3>
 <pre><code class="lang-python">ls()
 lsc()
 </code></pre>
-<h3 id="&#x6784;&#x9020;ip&#x6570;&#x636E;&#x5305;">&#x6784;&#x9020;IP&#x6570;&#x636E;&#x5305;</h3>
+<h3 id="&#x6784;&#x9020;ip&#x6570;&#x636E;&#x5305;"><a name="&#x6784;&#x9020;ip&#x6570;&#x636E;&#x5305;" class="plugin-anchor" href="#&#x6784;&#x9020;ip&#x6570;&#x636E;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x9020;IP&#x6570;&#x636E;&#x5305;</h3>
 <pre><code class="lang-python">pkt=IP(dst=<span class="hljs-string">&quot;8.8.8.8&quot;</span>)
 pkt.show()
 <span class="hljs-keyword">print</span> pkt.dst  <span class="hljs-comment"># 8.8.8.8</span>
 str(pkt)       <span class="hljs-comment"># hex string</span>
 hexdump(pkt)   <span class="hljs-comment"># hex dump</span>
 </code></pre>
-<h3 id="&#x8F93;&#x51FA;hex&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5305;">&#x8F93;&#x51FA;HEX&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5305;</h3>
+<h3 id="&#x8F93;&#x51FA;hex&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5305;"><a name="&#x8F93;&#x51FA;hex&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5305;" class="plugin-anchor" href="#&#x8F93;&#x51FA;hex&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F93;&#x51FA;HEX&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5305;</h3>
 <pre><code class="lang-py"><span class="hljs-keyword">import</span> binascii
 <span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
 a=Ether(dst=<span class="hljs-string">&quot;02:ac:10:ff:00:22&quot;</span>,src=<span class="hljs-string">&quot;02:ac:10:ff:00:11&quot;</span>)/IP(dst=<span class="hljs-string">&quot;172.16.255.22&quot;</span>,src=<span class="hljs-string">&quot;172.16.255.11&quot;</span>, ttl=<span class="hljs-number">10</span>)/ICMP()
 <span class="hljs-keyword">print</span> binascii.hexlify(str(a))
 </code></pre>
-<h3 id="tcpip&#x534F;&#x8BAE;&#x7684;&#x56DB;&#x5C42;&#x6A21;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x6784;&#x9020;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;">TCP/IP&#x534F;&#x8BAE;&#x7684;&#x56DB;&#x5C42;&#x6A21;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x6784;&#x9020;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>/</code>&#x8FDE;&#x63A5;</h3>
+<h3 id="tcpip&#x534F;&#x8BAE;&#x7684;&#x56DB;&#x5C42;&#x6A21;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x6784;&#x9020;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;"><a name="tcpip&#x534F;&#x8BAE;&#x7684;&#x56DB;&#x5C42;&#x6A21;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x6784;&#x9020;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;" class="plugin-anchor" href="#tcpip&#x534F;&#x8BAE;&#x7684;&#x56DB;&#x5C42;&#x6A21;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x6784;&#x9020;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>TCP/IP&#x534F;&#x8BAE;&#x7684;&#x56DB;&#x5C42;&#x6A21;&#x578B;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x6784;&#x9020;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>/</code>&#x8FDE;&#x63A5;</h3>
 <pre><code class="lang-py">Ether()/IP()/TCP()
 IP()/TCP()
 IP()/TCP()/<span class="hljs-string">&quot;GET / HTTP/1.0\r\n\r\n&quot;</span>
 Ether()/IP()/IP()/UDP()
 Ether()/IP(dst=<span class="hljs-string">&quot;www.slashdot.org&quot;</span>)/TCP()/<span class="hljs-string">&quot;GET /index.html HTTP/1.0 \n\n&quot;</span>
 </code></pre>
-<h3 id="&#x4ECE;pcap&#x6587;&#x4EF6;&#x8BFB;&#x5165;&#x6570;&#x636E;">&#x4ECE;PCAP&#x6587;&#x4EF6;&#x8BFB;&#x5165;&#x6570;&#x636E;</h3>
+<h3 id="&#x4ECE;pcap&#x6587;&#x4EF6;&#x8BFB;&#x5165;&#x6570;&#x636E;"><a name="&#x4ECE;pcap&#x6587;&#x4EF6;&#x8BFB;&#x5165;&#x6570;&#x636E;" class="plugin-anchor" href="#&#x4ECE;pcap&#x6587;&#x4EF6;&#x8BFB;&#x5165;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECE;PCAP&#x6587;&#x4EF6;&#x8BFB;&#x5165;&#x6570;&#x636E;</h3>
 <pre><code class="lang-py">a = rdpcap(<span class="hljs-string">&quot;test.cap&quot;</span>)
 </code></pre>
-<h3 id="&#x53D1;&#x9001;&#x6570;&#x636E;&#x5305;">&#x53D1;&#x9001;&#x6570;&#x636E;&#x5305;</h3>
+<h3 id="&#x53D1;&#x9001;&#x6570;&#x636E;&#x5305;"><a name="&#x53D1;&#x9001;&#x6570;&#x636E;&#x5305;" class="plugin-anchor" href="#&#x53D1;&#x9001;&#x6570;&#x636E;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D1;&#x9001;&#x6570;&#x636E;&#x5305;</h3>
 <pre><code class="lang-py"><span class="hljs-comment"># &#x4E09;&#x5C42;&#x53D1;&#x9001;&#xFF0C;&#x4E0D;&#x63A5;&#x6536;</span>
 send(IP(dst=<span class="hljs-string">&quot;8.8.8.8&quot;</span>)/ICMP())  
 <span class="hljs-comment"># &#x4E8C;&#x5C42;&#x53D1;&#x9001;&#xFF0C;&#x4E0D;&#x63A5;&#x6536;</span>
@@ -1529,29 +1533,29 @@ sr1(IP(dst=<span class="hljs-string">&quot;8.8.8.8&quot;</span>)/ICMP())
 <span class="hljs-comment"># &#x53D1;&#x9001;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5305;</span>
 result=srloop(IP(dst=<span class="hljs-string">&quot;8.8.8.8&quot;</span>)/ICMP(), inter=<span class="hljs-number">1</span>, count=<span class="hljs-number">2</span>)
 </code></pre>
-<h3 id="&#x55C5;&#x63A2;&#x6570;&#x636E;&#x5305;">&#x55C5;&#x63A2;&#x6570;&#x636E;&#x5305;</h3>
+<h3 id="&#x55C5;&#x63A2;&#x6570;&#x636E;&#x5305;"><a name="&#x55C5;&#x63A2;&#x6570;&#x636E;&#x5305;" class="plugin-anchor" href="#&#x55C5;&#x63A2;&#x6570;&#x636E;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x55C5;&#x63A2;&#x6570;&#x636E;&#x5305;</h3>
 <pre><code class="lang-py">sniff(filter=<span class="hljs-string">&quot;icmp&quot;</span>, count=<span class="hljs-number">3</span>, timeout=<span class="hljs-number">5</span>, prn=<span class="hljs-keyword">lambda</span> x:x.summary())
 a=sniff(filter=<span class="hljs-string">&quot;tcp and ( port 25 or port 110 )&quot;</span>,
  prn=<span class="hljs-keyword">lambda</span> x: x.sprintf(<span class="hljs-string">&quot;%IP.src%:%TCP.sport% -&gt; %IP.dst%:%TCP.dport%  %2s,TCP.flags% : %TCP.payload%&quot;</span>))
 </code></pre>
-<h3 id="syn&#x626B;&#x63CF;">SYN&#x626B;&#x63CF;</h3>
+<h3 id="syn&#x626B;&#x63CF;"><a name="syn&#x626B;&#x63CF;" class="plugin-anchor" href="#syn&#x626B;&#x63CF;"><i class="fa fa-link" aria-hidden="true"></i></a>SYN&#x626B;&#x63CF;</h3>
 <pre><code class="lang-py">sr1(IP(dst=<span class="hljs-string">&quot;172.217.24.14&quot;</span>)/TCP(dport=<span class="hljs-number">80</span>,flags=<span class="hljs-string">&quot;S&quot;</span>))
 ans,unans = sr(IP(dst=[<span class="hljs-string">&quot;192.168.1.1&quot;</span>,<span class="hljs-string">&quot;yahoo.com&quot;</span>,<span class="hljs-string">&quot;slashdot.org&quot;</span>])/TCP(dport=[<span class="hljs-number">22</span>,<span class="hljs-number">80</span>,<span class="hljs-number">443</span>],flags=<span class="hljs-string">&quot;S&quot;</span>))
 </code></pre>
-<h3 id="tcp-traceroute">TCP traceroute</h3>
+<h3 id="tcp-traceroute"><a name="tcp-traceroute" class="plugin-anchor" href="#tcp-traceroute"><i class="fa fa-link" aria-hidden="true"></i></a>TCP traceroute</h3>
 <pre><code class="lang-py">ans,unans=sr(IP(dst=<span class="hljs-string">&quot;www.baidu.com&quot;</span>,ttl=(<span class="hljs-number">2</span>,<span class="hljs-number">25</span>),id=RandShort())/TCP(flags=<span class="hljs-number">0x2</span>),timeout=<span class="hljs-number">50</span>)
 <span class="hljs-keyword">for</span> snd,rcv <span class="hljs-keyword">in</span> ans:
     <span class="hljs-keyword">print</span> snd.ttl,rcv.src,isinstance(rcv.payload,TCP)
 </code></pre>
-<h3 id="arp-ping">ARP Ping</h3>
+<h3 id="arp-ping"><a name="arp-ping" class="plugin-anchor" href="#arp-ping"><i class="fa fa-link" aria-hidden="true"></i></a>ARP Ping</h3>
 <pre><code class="lang-py">ans,unans=srp(Ether(dst=<span class="hljs-string">&quot;ff:ff:ff:ff:ff:ff&quot;</span>)/ARP(pdst=<span class="hljs-string">&quot;192.168.1.0/24&quot;</span>),timeout=<span class="hljs-number">2</span>)
 ans.summary(<span class="hljs-keyword">lambda</span> (s,r): r.sprintf(<span class="hljs-string">&quot;%Ether.src% %ARP.psrc%&quot;</span>) )
 </code></pre>
-<h3 id="icmp-ping">ICMP Ping</h3>
+<h3 id="icmp-ping"><a name="icmp-ping" class="plugin-anchor" href="#icmp-ping"><i class="fa fa-link" aria-hidden="true"></i></a>ICMP Ping</h3>
 <pre><code class="lang-py">ans,unans=sr(IP(dst=<span class="hljs-string">&quot;192.168.1.1-254&quot;</span>)/ICMP())
 ans.summary(<span class="hljs-keyword">lambda</span> (s,r): r.sprintf(<span class="hljs-string">&quot;%IP.src% is alive&quot;</span>) )
 </code></pre>
-<h3 id="tcp-ping">TCP Ping</h3>
+<h3 id="tcp-ping"><a name="tcp-ping" class="plugin-anchor" href="#tcp-ping"><i class="fa fa-link" aria-hidden="true"></i></a>TCP Ping</h3>
 <pre><code class="lang-py">ans,unans=sr( IP(dst=<span class="hljs-string">&quot;192.168.1.*&quot;</span>)/TCP(dport=<span class="hljs-number">80</span>,flags=<span class="hljs-string">&quot;S&quot;</span>) )
 ans.summary( <span class="hljs-keyword">lambda</span>(s,r) : r.sprintf(<span class="hljs-string">&quot;%IP.src% is alive&quot;</span>) )
 </code></pre>
@@ -1598,7 +1602,7 @@ ans.summary( <span class="hljs-keyword">lambda</span>(s,r) : r.sprintf(<span cla
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"scapy","level":"2.2.9.2","depth":3,"next":{"title":"内核网络参数","level":"2.2.10","depth":2,"path":"linux/kernel-network-params.md","ref":"linux/kernel-network-params.md","articles":[]},"previous":{"title":"网络抓包tcpdump","level":"2.2.9.1","depth":3,"path":"linux/tcpdump.md","ref":"linux/tcpdump.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/scapy.md","mtime":"2017-11-30T15:28:26.467Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"scapy","level":"2.2.9.2","depth":3,"next":{"title":"内核网络参数","level":"2.2.10","depth":2,"path":"linux/kernel-network-params.md","ref":"linux/kernel-network-params.md","articles":[]},"previous":{"title":"网络抓包tcpdump","level":"2.2.9.1","depth":3,"path":"linux/tcpdump.md","ref":"linux/tcpdump.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/scapy.md","mtime":"2017-11-30T15:28:26.467Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1606,6 +1610,10 @@ ans.summary( <span class="hljs-keyword">lambda</span>(s,r) : r.sprintf(<span cla
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

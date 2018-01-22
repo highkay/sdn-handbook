@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,8 +1484,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="build-ovs">Build OVS</h1>
-<h2 id="&#x76F4;&#x63A5;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;">&#x76F4;&#x63A5;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</h2>
+                                <h1 id="build-ovs"><a name="build-ovs" class="plugin-anchor" href="#build-ovs"><i class="fa fa-link" aria-hidden="true"></i></a>Build OVS</h1>
+<h2 id="&#x76F4;&#x63A5;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><a name="&#x76F4;&#x63A5;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#x76F4;&#x63A5;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76F4;&#x63A5;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</h2>
 <pre><code class="lang-sh"><span class="hljs-built_in">export</span> OVS_VERSION=<span class="hljs-string">&quot;2.6.1&quot;</span>
 <span class="hljs-built_in">export</span> OVS_DIR=<span class="hljs-string">&quot;/usr/src/ovs&quot;</span>
 <span class="hljs-built_in">export</span> OVS_INSTALL_DIR=<span class="hljs-string">&quot;/usr&quot;</span>
@@ -1495,7 +1499,7 @@ make -j `nproc`
 make install
 make modules_install
 </code></pre>
-<h3 id="&#x66F4;&#x65B0;&#x5185;&#x6838;&#x6A21;&#x5757;">&#x66F4;&#x65B0;&#x5185;&#x6838;&#x6A21;&#x5757;</h3>
+<h3 id="&#x66F4;&#x65B0;&#x5185;&#x6838;&#x6A21;&#x5757;"><a name="&#x66F4;&#x65B0;&#x5185;&#x6838;&#x6A21;&#x5757;" class="plugin-anchor" href="#&#x66F4;&#x65B0;&#x5185;&#x6838;&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x5185;&#x6838;&#x6A21;&#x5757;</h3>
 <pre><code class="lang-sh">cat &gt; /etc/depmod.d/openvswitch.conf &lt;&lt; EOF
 override openvswitch * extra
 override vport-* * extra
@@ -1505,23 +1509,23 @@ depmod <span class="hljs-_">-a</span>
 cp debian/openvswitch-switch.init /etc/init.d/openvswitch-switch
 /etc/init.d/openvswitch-switch force-reload-kmod
 </code></pre>
-<h2 id="&#x7F16;&#x8BD1;rpm&#x5305;">&#x7F16;&#x8BD1;RPM&#x5305;</h2>
+<h2 id="&#x7F16;&#x8BD1;rpm&#x5305;"><a name="&#x7F16;&#x8BD1;rpm&#x5305;" class="plugin-anchor" href="#&#x7F16;&#x8BD1;rpm&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x8BD1;RPM&#x5305;</h2>
 <pre><code class="lang-sh">make rpm-fedora RPMBUILD_OPT=<span class="hljs-string">&quot;--without check&quot;</span>
 </code></pre>
-<h3 id="&#x542F;&#x7528;dpdk">&#x542F;&#x7528;DPDK</h3>
+<h3 id="&#x542F;&#x7528;dpdk"><a name="&#x542F;&#x7528;dpdk" class="plugin-anchor" href="#&#x542F;&#x7528;dpdk"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x7528;DPDK</h3>
 <pre><code class="lang-sh">make rpm-fedora RPMBUILD_OPT=<span class="hljs-string">&quot;--with dpdk --without check&quot;</span>
 </code></pre>
-<h3 id="&#x7F16;&#x8BD1;&#x5185;&#x6838;&#x6A21;&#x5757;">&#x7F16;&#x8BD1;&#x5185;&#x6838;&#x6A21;&#x5757;</h3>
+<h3 id="&#x7F16;&#x8BD1;&#x5185;&#x6838;&#x6A21;&#x5757;"><a name="&#x7F16;&#x8BD1;&#x5185;&#x6838;&#x6A21;&#x5757;" class="plugin-anchor" href="#&#x7F16;&#x8BD1;&#x5185;&#x6838;&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x8BD1;&#x5185;&#x6838;&#x6A21;&#x5757;</h3>
 <pre><code class="lang-sh">make rpm-fedora-kmod
 </code></pre>
-<h2 id="&#x7F16;&#x8BD1;deb&#x5305;">&#x7F16;&#x8BD1;deb&#x5305;</h2>
+<h2 id="&#x7F16;&#x8BD1;deb&#x5305;"><a name="&#x7F16;&#x8BD1;deb&#x5305;" class="plugin-anchor" href="#&#x7F16;&#x8BD1;deb&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x8BD1;deb&#x5305;</h2>
 <pre><code class="lang-sh">apt-get install build-essential fakeroot
 dpkg-checkbuilddeps
 <span class="hljs-comment"># &#x5DF2;&#x7ECF;&#x7F16;&#x8BD1;&#x8FC7;&#xFF0C;&#x9700;&#x8981;&#x9996;&#x5148;clean</span>
 <span class="hljs-comment"># fakeroot debian/rules clean</span>
 DEB_BUILD_OPTIONS=<span class="hljs-string">&apos;parallel=8 nocheck&apos;</span> fakeroot debian/rules binary
 </code></pre>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="http://docs.openvswitch.org/en/latest/intro/install/" target="_blank">Installing Open vSwitch</a></li>
 <li><a href="http://docs.openvswitch.org/en/latest/intro/install/debian/" target="_blank">Debian Packaging for Open vSwitch</a></li>
@@ -1571,7 +1575,7 @@ DEB_BUILD_OPTIONS=<span class="hljs-string">&apos;parallel=8 nocheck&apos;</span
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"OVS编译","level":"2.3.2","depth":2,"next":{"title":"OVS原理","level":"2.3.3","depth":2,"path":"ovs/internal.md","ref":"ovs/internal.md","articles":[]},"previous":{"title":"OVS介绍","level":"2.3.1","depth":2,"path":"ovs/README.md","ref":"ovs/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/build.md","mtime":"2017-11-30T15:28:26.468Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"OVS编译","level":"2.3.2","depth":2,"next":{"title":"OVS原理","level":"2.3.3","depth":2,"path":"ovs/internal.md","ref":"ovs/internal.md","articles":[]},"previous":{"title":"OVS介绍","level":"2.3.1","depth":2,"path":"ovs/README.md","ref":"ovs/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/build.md","mtime":"2017-11-30T15:28:26.468Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1579,6 +1583,10 @@ DEB_BUILD_OPTIONS=<span class="hljs-string">&apos;parallel=8 nocheck&apos;</span
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

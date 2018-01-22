@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1480,7 +1484,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="xdp">XDP</h1>
+                                <h1 id="xdp"><a name="xdp" class="plugin-anchor" href="#xdp"><i class="fa fa-link" aria-hidden="true"></i></a>XDP</h1>
 <p>XDP&#xFF08;eXpress Data Path&#xFF09;&#x4E3A;Linux&#x5185;&#x6838;&#x63D0;&#x4F9B;&#x4E86;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x53EF;&#x7F16;&#x7A0B;&#x7684;&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x8DEF;&#x5F84;&#x3002;&#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x5305;&#x5728;&#x8FD8;&#x672A;&#x8FDB;&#x5165;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x6808;&#x4E4B;&#x524D;&#x5C31;&#x5904;&#x7406;&#xFF0C;&#x5B83;&#x7ED9;Linux&#x7F51;&#x7EDC;&#x5E26;&#x6765;&#x4E86;&#x5DE8;&#x5927;&#x7684;&#x6027;&#x80FD;&#x63D0;&#x5347;&#xFF08;&#x6027;&#x80FD;&#x6BD4;DPDK&#x8FD8;&#x8981;&#x9AD8;&#xFF09;&#x3002;</p>
 <p><img src="images/xdp-packet-processing-1024x560.png" alt="xdp-packet-processing"></p>
 <p>XDP&#x4E3B;&#x8981;&#x7684;&#x7279;&#x6027;&#x5305;&#x62EC;</p>
@@ -1496,7 +1500,7 @@
 <li>XDP&#x7A0B;&#x5E8F;&#x5FEB;&#x901F;&#x6267;&#x884C;&#x5E76;&#x7ED3;&#x675F;&#xFF0C;&#x6CA1;&#x6709;&#x5FAA;&#x73AF;</li>
 <li>Packeting steering</li>
 </ul>
-<h2 id="&#x4E0E;dpdk&#x5BF9;&#x6BD4;">&#x4E0E;DPDK&#x5BF9;&#x6BD4;</h2>
+<h2 id="&#x4E0E;dpdk&#x5BF9;&#x6BD4;"><a name="&#x4E0E;dpdk&#x5BF9;&#x6BD4;" class="plugin-anchor" href="#&#x4E0E;dpdk&#x5BF9;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0E;DPDK&#x5BF9;&#x6BD4;</h2>
 <p>&#x76F8;&#x5BF9;&#x4E8E;DPDK&#xFF0C;XDP&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x4F18;&#x70B9;</p>
 <ul>
 <li>&#x65E0;&#x9700;&#x7B2C;&#x4E09;&#x65B9;&#x4EE3;&#x7801;&#x5E93;&#x548C;&#x8BB8;&#x53EF;</li>
@@ -1505,19 +1509,19 @@
 <li>&#x65E0;&#x9700;&#x4E13;&#x7528;&#x7684;CPU</li>
 <li>&#x65E0;&#x9700;&#x5B9A;&#x4E49;&#x65B0;&#x7684;&#x5B89;&#x5168;&#x7F51;&#x7EDC;&#x6A21;&#x578B;</li>
 </ul>
-<h2 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h2>
+<h2 id="&#x793A;&#x4F8B;"><a name="&#x793A;&#x4F8B;" class="plugin-anchor" href="#&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793A;&#x4F8B;</h2>
 <ul>
 <li><a href="https://github.com/torvalds/linux/tree/master/samples/bpf" target="_blank">Linux&#x5185;&#x6838;BPF&#x793A;&#x4F8B;</a></li>
 <li><a href="https://github.com/netoptimizer/prototype-kernel/tree/master/kernel/samples/bpf" target="_blank">prototype-kernel&#x793A;&#x4F8B;</a></li>
 <li><a href="https://github.com/torvalds/linux/tree/master/tools/lib/bpf" target="_blank">libbpf</a></li>
 </ul>
-<h2 id="&#x7F3A;&#x70B9;">&#x7F3A;&#x70B9;</h2>
+<h2 id="&#x7F3A;&#x70B9;"><a name="&#x7F3A;&#x70B9;" class="plugin-anchor" href="#&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F3A;&#x70B9;</h2>
 <p>&#x6CE8;&#x610F;XDP&#x7684;&#x6027;&#x80FD;&#x63D0;&#x5347;&#x662F;&#x6709;&#x4EE3;&#x4EF7;&#x7684;&#xFF0C;&#x5B83;&#x727A;&#x7272;&#x4E86;&#x901A;&#x7528;&#x578B;&#x548C;&#x516C;&#x5E73;&#x6027;</p>
 <ul>
 <li>XDP&#x4E0D;&#x63D0;&#x4F9B;&#x7F13;&#x5B58;&#x961F;&#x5217;&#xFF08;qdisc&#xFF09;&#xFF0C;TX&#x8BBE;&#x5907;&#x592A;&#x6162;&#x65F6;&#x76F4;&#x63A5;&#x4E22;&#x5305;&#xFF0C;&#x56E0;&#x800C;&#x4E0D;&#x8981;&#x5728;RX&#x6BD4;TX&#x5FEB;&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#x4F7F;&#x7528;XDP</li>
 <li>XDP&#x7A0B;&#x5E8F;&#x662F;&#x4E13;&#x7528;&#x7684;&#xFF0C;&#x4E0D;&#x5177;&#x5907;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x6808;&#x7684;&#x901A;&#x7528;&#x6027;</li>
 </ul>
-<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://www.iovisor.org/technology/xdp" target="_blank">Introduction to XDP</a></li>
 <li><a href="http://people.netfilter.org/hawk/presentations/NetDev1.1_2016/links.html" target="_blank">Network Performance BoF</a></li>
@@ -1568,7 +1572,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"XDP","level":"2.2.8","depth":2,"next":{"title":"XDP架构","level":"2.2.8.1","depth":3,"path":"linux/XDP/design.md","ref":"linux/XDP/design.md","articles":[]},"previous":{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/XDP/README.md","mtime":"2017-11-30T15:28:26.464Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-19T17:04:10.599Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"XDP","level":"2.2.8","depth":2,"next":{"title":"XDP架构","level":"2.2.8.1","depth":3,"path":"linux/XDP/design.md","ref":"linux/XDP/design.md","articles":[]},"previous":{"title":"故障排查","level":"2.2.7.2","depth":3,"path":"linux/bpf/troubleshooting.md","ref":"linux/bpf/troubleshooting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/XDP/README.md","mtime":"2017-11-30T15:28:26.464Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-22T16:32:57.239Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1576,6 +1580,10 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
